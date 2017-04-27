@@ -73,31 +73,71 @@
                  <!-- /. ROW  -->
                   <hr />
                   <form class="form-inline">
+
                     <div class="form-group">
-                      <label for="exampleInputName2">Razão Social</label>
-                      <input type="text" class="form-control" id="periodo" size=69>
+                      <label for="razaoSocial">Razão Social</label>
+                      <input type="text" class="form-control" id="razaoSocial" size=69>
                     </div>
-                  </form>
-                  <form class="form-inline">
+
                     <div class="form-group">
-                      <label for="exampleInputName2">CNPJ/CPF</label>
-                      <input type="text" class="form-control" id="periodo" size=10>
+                      <label for="cnpj">CNPJ/CPF</label>
+                      <input type="text" class="form-control" id="cnpj" size=10>
                     </div>
+
                     <div class="form-group">
-                      <label for="exampleInputEmail2">I.E.</label>
-                      <input type="text" class="form-control" id="periodo2"size=9>
+                      <label for="ie">I.E.</label>
+                      <input type="text" class="form-control" id="ie"size=9>
                     </div>
+
                     <div class="form-group">
-                      <label for="exampleInputName2">I.M.</label>
-                      <input type="text" class="form-control" id="periodo"size=8>
+                      <label for="im">I.M.</label>
+                      <input type="text" class="form-control" id="im"size=8>
                     </div>
+
                     <div class="form-group">
-                      <label for="exampleInputName2">Tel.</label>
-                      <input type="text" class="form-control" id="periodo"size=13>
+                      <label for="tel">Tel.</label>
+                      <input type="text" class="form-control" id="tel"size=13>
                     </div>
+
+                    <div class="form-group">
+                      <label for="endereco">Endereço</label>
+                      <input type="text" class="form-control" id="endereco" size=40>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" size=20>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" size="20">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cep">C.E.P</label>
+                        <input type="text" class="form-control" id="cep" size="15">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estados">UF</label>
+                        <select id="estados">
+			                      <option value=""></option>
+                        </select> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <select id="cidades">
+                            
+                        </select>
+                    </div>
+
+
                   </form>
 
                   <form class="form-inline">
+                    <h3> Dados responsável </h3>
                     <div class="form-group">
                       <label for="exampleInputName2">Endereço</label>
                       <input type="text" class="form-control" id="periodo" size=40>
@@ -127,6 +167,7 @@
                     </div>
                   </form>
                 <br>
+
                   <form class="form-inline">
                     <div class="form-group">
                       <label for="exampleInputName2">Nome</label>
@@ -228,7 +269,9 @@
       <!-- BOOTSTRAP SCRIPTS -->
     <script src="assets/js/bootstrap.min.js"></script>
       <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
+
+    <script src="assets/js/cadastroCliente.js"></script>
 
 
 </body>
