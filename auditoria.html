@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EGDOC - Admin</title>
+    <title>EGDOC - Relatório de Acesso</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -62,71 +62,74 @@
         <div id="page-wrapper" >
             <div id="page-inner">
                 <div class="row">
-                    <div class="col-md-12">
-                     <h2 class="text-primary">Usuário Master</h2>
-                    </div>
+                    <div class="col-md-4">
+                       <a class="navbar-brand" href="index.html">
+                           <img src="assets/img/logo.png" />
+                       </a>
+                       <!-- <br><br><br><br> -->
+                       </div>
+                       <div class="col-md-4">
+                    
+                         <br>
+                         <h2>Razão Social</h2>
+
+                       
+                     </div>
+                      <!-- <div>
+                         <input type="button" name="auditar" value="Auditar">
+                      </div> -->
+                      </div>
+
+                      <br><br>
+
+                      <div class="row">
+
+                      <h3 class="text-primary"> Relatório de Acesso:</h3>
+                      <form class="form-inline">
+                       <div class="form-group">
+                         <label for="exampleInputName2">Período</label>
+                         <input required="true" type="date" class="form-control" id="periodoInicio" size=20>
+                       </div>
+                       <div class="form-group">
+                         <label for="exampleInputEmail2">de</label>
+                         <input required="true" type="date" class="form-control" id="periodoFim" size=20>
+                       </div>
+                       </form>
+
+                       <br>
+                     
+                       <form class="form-inline">
+
+                       <div class="form-group">
+                         <label for="usuario">Usuário:</label>
+                         <input required="true" placeholder="Usuário" type="text" class="form-control" id="usuario">
+                       </div>
+                     
+                       <br>
+                       <br>
+                     
+                       <div class="form-group">
+                         <label for="transacao">Transação:</label>
+                         <input required="true" placeholder="Transação" type="text" class="form-control" id="transacao">
+                       </div>
+                     </form>
+
+                     <br>
+
+
+                     <input type="button" id="auditorio" value="Auditória">
+
+
                 </div>
                  <!-- /. ROW  -->
                   <hr />
 
                  <!-- /. ROW  -->
-
-
-            <div class="row text-center pad-top">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <div class="div-square">
-           <a href="cadastroUsuarioMaster.html" >
-             <i class="fa fa-plus fa-5x"></i>
-             <h4>Adicionar</h4>
-          </a>
-        </div>
-
-
-        </div>
-
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <div class="div-square">
-           <a href="cadastroClientes.html" >
-             <i class="fa fa-pencil fa-5x"></i>
-             <h4>Editar</h4>
-          </a>
-        </div>
-
-
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <div class="div-square">
-           <a href="blank.html" >
-              <i class="fa fa-minus fa-5x"></i>
-              <h4>Excluir</h4>
-           </a>
-        </div>
-
-
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <div class="div-square">
-            <a href="blank.html" >
-              <i class="fa fa-print fa-5x"></i>
-              <h4>Imprimir</h4>
-            </a>
-        </div>
-
-
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <div class="div-square">
-            <a href="blank.html" >
-              <i class="fa fa-share fa-5x"></i>
-              <h4>Exportar</h4>
-            </a>
-        </div>
-
-        </div>
-        </div>
+    </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
+        </div>
         </div>
     <div class="footer">
 

@@ -63,21 +63,21 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-10">
-                     <h2>Cadastro de Clientes</h2>
+                     <h2 class="text-primary text-center">Cadastro de Clientes</h2>
+
+                     <h2 class="text-primary text-left">Razão Social</h2>
                     </div>
 
 
 
 
                 </div>
-                 <!-- /. ROW  -->
+                 
                   <hr />
-                  <form class="form-inline">
 
-                    <div class="form-group">
-                      <label for="razaoSocial">Razão Social</label>
-                      <input type="text" required="true" class="form-control" id="razaoSocial" size=69>
-                    </div>
+
+                  <!-- Primero bloco --> 
+                  <form class="form-inline">
 
                     <div class="form-group">
                       <label for="cnpj">CNPJ/CPF</label>
@@ -86,17 +86,17 @@
 
                     <div class="form-group">
                       <label for="ie">I.E.</label>
-                      <input type="text" required="true" class="form-control" id="ie"size=9>
+                      <input type="text" required="true" class="form-control" id="ie" size=9>
                     </div>
 
                     <div class="form-group">
                       <label for="im">I.M.</label>
-                      <input type="text" required="true" class="form-control" id="im"size=8>
+                      <input type="text" required="true" class="form-control" id="im" size=8>
                     </div>
 
                     <div class="form-group">
                       <label for="tel">Tel.</label>
-                      <input type="text" required="true" class="form-control" id="tel"size=13>
+                      <input type="text" required="true" class="form-control" id="tel" size=13>
                     </div>
 
                     <div class="form-group">
@@ -135,11 +135,13 @@
 
 
                   </form>
+                  <!-- Fim do primeiro bloco -->
 
                 <br>
 
+                  <!-- Bloco Dados Responśavel -->
                   <form class="form-inline">
-                    <h3> Dados responsável </h3>
+                    <h3 class="text-primary"> Dados responsável: </h3>
                     <div class="form-group">
                       <label for="exampleInputName2">Nome</label>
                       <input type="text" required="true" class="form-control" id="periodo" size=52>
@@ -160,9 +162,13 @@
                     </div>
                   </form>
 
+                  <!-- Fim do Bloco Dados Responśavel -->
+
                   <br>
+
+                  <!-- Bloco Dados Operacional -->
                   <form class="form-inline">
-                    <h3> Dados operacional </h3>
+                    <h3 class="text-primary"> Dados operacional: </h3>
                     <div class="form-group">
                       <label for="exampleInputName2">Nome</label>
                       <input type="text" required="true" class="form-control" id="periodo" size=52>
@@ -183,9 +189,13 @@
                     </div>
                   </form>
 
+                  <!-- Fim do Bloco Operacional -->
+
                     <br>
+
+                    <!-- Bloco Dados Financeiro -->
                     <form class="form-inline">
-                      <h3> Dados financeiro </h3>
+                      <h3 class="text-primary"> Dados financeiro: </h3>
                       <div class="form-group">
                         <label for="exampleInputName2">Nome</label>
                         <input type="text" required="true" class="form-control" id="periodo" size=52>
@@ -206,9 +216,11 @@
                       </div>
                     </form>
 
+                    <!-- Fim do Bloco Dados Financeiro -->
+
                     <br>
 
-
+                    <!-- Ultimo Bloco -->
                     <form class="form-inline">
                       <div class="form-group">
                         <label for="dataContratacao">Data de Contratação</label>
@@ -235,6 +247,8 @@
                         </textarea>
                       </div>
                     </form>
+
+                    <!-- Fim o Ultimo Bloco -->
 
                     <input type="submit" name="salvar" value="Salvar">
                   
