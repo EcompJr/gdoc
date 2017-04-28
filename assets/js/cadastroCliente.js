@@ -1,6 +1,6 @@
 		$(document).ready(function () {
 		
-			$.getJSON('estados-cidades.json', function (data) {
+			$.getJSON('https://gist.githubusercontent.com/ografael/2037135/raw/5d31e7baaddd0d599b64c3ec04827fc244333447/estados_cidades.json', function (data) {
 				var items = [];
 				var options = '<option value="">escolha um estado</option>';	
 				$.each(data, function (key, val) {
