@@ -70,7 +70,7 @@
          <!-- <br><br><br><br> -->
        </div>
        <div class="col-md-4">
-        
+
          <br>
          <h2>Razão Social</h2>
          <br>
@@ -78,66 +78,78 @@
        </div>
 
      </div>
-      <div class="row">
-        <div class="col-md-10">
-         <h2 class="text-primary text-center">Dados do usuário master</h2>
-         <br>
-       </div>
+     <div class="row">
+      <div class="col-md-10">
+       <h2 class="text-primary text-center">Dados do usuário master</h2>
+       <br>
+     </div>
 
 
-       <form class="form-inline">
-        <div class="form-group">
-          <label for="exampleInputName2">Código de Controle:</label>
-          <input required="true" type="text" class="form-control" id="periodo" size="37">
-        </div>
-        <div class="radio">
-          <label for="exampleInputName2"><b>Situação:</b></label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-          Ativo
-        </label>
+     <form class="form-inline" id="formCadastro" data-toggle="validator" role="form" data-delay="350">
+      <div class="form-group">
+        <label for="exampleInputName2">Código de Controle:</label>
+        <input required type="text" class="form-control" id="controle" placeholder="informe o código de controle" size="37">
       </div>
       <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Inativo
-        </label>
-      </div>
-
-    </form>
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="exampleInputName2">Nome:</label>
-        <input required="true" type="text" class="form-control" id="periodo" size=75>
-      </div>
-    </form>
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="exampleInputName2">E-mail:</label>
-        <input required="true" type="email" class="form-control" id="periodo" size=75>
-      </div>
-    </form>
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="exampleInputName2">Login:</label>
-        <input required="true" type="text" class="form-control" id="periodo" size=18>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail2">Senha:</label>
-        <input required="true" type="password" class="form-control" id="periodo2" size=18>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputName2">Tel:</label>
-        <input required="true" type="text" class="form-control" id="periodo" size=16>
-      </div>
-    </form>
-
-
+        <label for="optionsRadios1"><b>Situação:</b></label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Ativo
+      <!-- </label> -->
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Inativo
+      </label>
+    </div>
+  
+  <div class="form-group">
+    <label for="nome">Nome:</label>
+    <input required type="text" class="form-control" id="nome" placeholder="Digite seu nome" size=75>
   </div>
-  <!-- /. ROW  -->
-  <hr />
-  <input type="submit" name="salvar" value="Salvar">
-  <input type="reset" name="limpar" value="Limpar">
-  <!-- /. ROW  -->
+  <!-- </form> -->
+  <!-- <form class="form-inline"> -->
+  <div class="form-group">
+    <label for="email">E-mail:</label>
+    <input required type="email" class="form-control" id="email" size=75 placeholder="Digite email" data-error="Por favor, informe um Email válido.">
+    <div class="help-block with-errors"></div>
+  </div>
+  <!-- </form> -->
+  <!-- <form class="form-inline"> -->
+  <div class="form-group" >
+    <label for="login">Login:</label>
+    <input required type="text" class="form-control" id="login" size=18 placeholder="Digite login" data-error="Por favor, informe um login válido.">
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="senha">Senha:</label>
+    <input required type="password" class="form-control" id="senha" size=18 placeholder="Digite sua senha" data-minlenght="4" data-error="Por favor, informe uma senha com no min 4 digitos.">
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="telefone">Tel:</label>
+    <input required type="tel" class="form-control" id="telefone" size=16 data-error="Por favor, informe um Telefone correto." placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+    <div class="help-block with-errors"></div>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Salvar</button>    
+  </div>
+
+  <div class="form-group">
+    <button type="reset" class="btn btn-primary">Resetar</button>
+  </div>
+
+
+</form>
+
+
+</div>
+<!-- /. ROW  -->
+<hr />
+
+
+<!-- /. ROW  -->
 </div>
 <!-- /. PAGE INNER  -->
 </div>
@@ -157,11 +169,15 @@
 <!-- /. WRAPPER  -->
 <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
 <!-- JQUERY SCRIPTS -->
-<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/lib/jquery-1.10.2.js"></script>
 <!-- BOOTSTRAP SCRIPTS -->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/lib/bootstrap.min.js"></script>
 <!-- CUSTOM SCRIPTS -->
-<script src="assets/js/custom.js"></script>
+<!-- <script src="assets/js/custom.js"></script> -->
+
+<script src="assets/js/cadastroUsuarioMaster.js"></script>
+
+<script src="assets/js/lib/validator.min.js"></script>
 
 
 </body>

@@ -2,7 +2,7 @@
 		
 			$.getJSON('https://gist.githubusercontent.com/ografael/2037135/raw/5d31e7baaddd0d599b64c3ec04827fc244333447/estados_cidades.json', function (data) {
 				var items = [];
-				var options = '<option value="">escolha um estado</option>';	
+				var options = '<option value="">Escolha um Estado</option>';	
 				$.each(data, function (key, val) {
 					options += '<option value="' + val.nome + '">' + val.nome + '</option>';
 				});					
