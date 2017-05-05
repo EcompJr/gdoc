@@ -1,9 +1,15 @@
 $(document).ready(function () {
 
+//$('#signupbox').hide()
 
-$('#btn-esqueceu').click(function() {
+$('#recuperar').click(function() {
                     $('#loginbox').hide();
                     $('#signupbox').show();
+});
+
+$('#confirmar').click(function() {
+                    $('#loginbox').show();
+                    $('#signupbox').hide();
 });
 
 
