@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(33, 71, 97);
+}
+
+.input-margin{
+    margin-bottom: 25px;
+}
+
+.login-footnote{
+    border-top: 1px solid#888;
+    padding-top:15px;
+    font-size:85%;
+
+}
+
+#loginbox{
+    margin-top:50px;
+}
+#signupbox{
+    margin-top:50px;
+    display: none;
+}
+
+#signinlink{
+    float:right;
+    font-size: 85%;
+    position: relative;
+    top:-10px;
+}
+
+#login-alert{
+    display:none;
+}
+
+#esqueceu{
+    float:right;
+    font-size: 100%;
+    position: relative;
+    top:-10px;
+}
