@@ -70,48 +70,81 @@
      <hr />
      <!-- Primero bloco -->
      <!-- <form> -->
-     <h4 class="text-primary"> Pesquisa Avançada: Digite no campo escolhido ou use o combox</h4>
-     <form class="form-inline" d="formCadastro" data-toggle="validator" role="form" data-delay="350">
+     <h4 class="text-primary"> Pesquisa Avançada</h4>
+     <form class="form-inline" d="formCadastro" role="form">
 
         <div class="form-group">
           <label for="nomePasta">Nome da Pasta</label>
-          <input type="text" required class="form-control" id="nomePasta" size=15>
+          <input type="text" class="form-control" id="nomePasta" size=10>
         </div>
 
         <div class="form-group">
           <label for="documento">Documento</label>
-          <input type="text" required class="form-control" id="documento" size=15>
+          <input type="text" class="form-control" id="documento" size=10>
         </div>
 
         <div class="form-group">
           <label for="palavraComentario">Palavra Comentário</label>
-          <input type="text" required class="form-control" id="palavraComentario" size=15>
+          <input type="text" class="form-control" id="palavraComentario" size=5>
         </div>
 
         <div class="form-group">
           <label for="data">Data</label>
-          <input type="text" required class="form-control" id="data" size=15>
+          <input type="date" class="form-control" id="data">
         </div>
 
-
-
-
-
-
-    <!-- </form> -->
-    <!-- Fim do Primeiro Bloco -->
-
+        <div class="form-group">
+          <button class="btn btn-primary" role="search">Pesquisar</button>
+        </div>
     <br>
 
-    <!-- Segundo Bloco -->
-    <!-- <form class="form-inline"> -->
+    <!-- Grid da pagina  -->
+             <div class ="row">
+               <div class="col-md-8 col-lg-8 col-md-offset-4 col-xs-12 table-responsive">
 
-    <div class="form-group">
-      <label for="anexar">Anexar</label>
-      <input type="file" required="true" class="form-control" id="anexar" size=75>
-    </div>
+                 <table class="table table-striped table-bordered table-hover">
+                       <thead>
+                         <tr>
+                           <th>Data</th>
+                           <th>Ato </th>
+                           <th>Instrumento</th>
+                           <th>Origem </th>
+                           <th>Destino</th> 
+                         </tr>
+                       </thead>
 
-    <br>
+                       <tbody>
+                         <tr>
+                         <td>XX/XX/XXXX</td>
+                         <td> Lorem Ipsum</td>
+                         <td> Lorem Ipsum</td>
+                         <td> Lorem Ipsum</td>
+                         <td> Lorem Ipsum</td>
+                         
+                       </tr>
+                       <tr>
+                         <td>XX/XX/XXXX</td>
+                         <td>Lorem Ipsum</td>
+                         <td>Ipsum Lorem</td>
+                         <td> Lorem Ipsum</td>
+                         <td> Lorem Ipsum</td>
+                         
+                       </tr>
+                       </tbody>
+
+                 </table>
+
+               </div>
+
+
+
+
+    <form class="form-horizontal" id="formAnexo" role="form">
+
+      <div class="form-group">
+        <label for="anexar">Anexar</label>
+        <input type="file" class="form-control" id="anexar">
+      </div>
 
     <div class="form-group">
       <label for="texto">Texto</label>
@@ -122,13 +155,13 @@
       <br>
 
     <div class="form-group">
-      <button class="btn btn-primary" type="submit" name="salvar">Gravar Dados</button>
+      <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
     </div>
     <div class="form-group">
-      <button class="btn btn-primary" type="reset" name="limpar">Limpar Dados</button>
+      <button class="btn btn-primary" type="reset" name="limpar" disabled>Limpar Dados</button>
     </div>
     <div class="form-group">
-      <button class="btn btn-primary" type="text" name="cancelar">Cancelar Cadastro</button>
+      <button class="btn btn-primary" type="text" name="cancelar" disabled>Cancelar Cadastro</button>
     </div>
 
   </form>
@@ -165,8 +198,6 @@
 <!-- CUSTOM SCRIPTS -->
 <!-- <script src="assets/js/custom.js"></script> -->
 <script src="assets/js/cadastroCliente.js"></script>
-
-<script src="assets/js/lib/validator.min.js"></script>
 
 
 </body>

@@ -70,39 +70,39 @@
      <hr />
      <!-- Primero bloco -->
      <!-- <form> -->
-     <form class="form-inline" d="formCadastro" data-toggle="validator" role="form" data-delay="350">
+     <form class="form-inline" d="formArquivo">
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="nomePasta">Nome da Pasta</label>
           <input type="text" required class="form-control" id="nomePasta" size=63>
+        </div> -->
+
+        <div class="form-group">
+          <label for="anexar">Anexar:</label>
+          <input requierd type="file" class="form-control" id="anexar">
         </div>
-
-
-    <!-- </form> -->
-
-    <!-- Fim do Primeiro Bloco -->
 
     <br>
 
-    <!-- Segundo Bloco -->
-    <!-- <form class="form-inline"> -->
-
     <div class="form-group">
-      <label for="comentarioAdicional">Comentário Adicional</label>
-      <textarea placeholder="Escreva aqui sua observação" id="comentarioAdicional" rows="2" cols="60">
+      <label for="comentarioAdicional">Comentário Adicional:</label>
+      <textarea placeholder="Escreva aqui sua observação" id="comentarioAdicional" rows="1" cols="30">
       </textarea>
     </div>
 
+    <br>
+
     <div class="form-group">
-      <label for="texto">Texto</label>
-      <textarea placeholder="Escreva aqui seu texto" id="texto" rows="5" cols="75">
+      <label for="texto">Texto:</label>
+      <textarea placeholder="Escreva aqui seu texto" id="texto" rows="2" cols="60">
       </textarea>
       </div>
 
       <br>
 
+      <form class="form-inline">
     <div class="form-group">
-      <button class="btn btn-primary" type="submit" name="salvar">Gravar Dados</button>
+      <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
     </div>
     <div class="form-group">
       <button class="btn btn-primary" type="reset" name="limpar">Limpar Dados</button>
@@ -117,8 +117,9 @@
     <!-- <form class="form-inline"> -->
 
     <!-- Fim do Terceiro Bloco -->
-    <!-- </form> -->
+    <!--</form> -->
 
+      </form>
   </form>
 
 
@@ -153,8 +154,6 @@
 <!-- CUSTOM SCRIPTS -->
 <!-- <script src="assets/js/custom.js"></script> -->
 <script src="assets/js/cadastroCliente.js"></script>
-
-<script src="assets/js/lib/validator.min.js"></script>
 
 
 </body>
