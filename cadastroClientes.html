@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,276 +14,282 @@
   <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
+
 <body>
 
 
 
   <div id="wrapper">
-   <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="adjust-nav">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="adjust-nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/logo.png" />
-        </a>
-      </div>
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo.png" />
+          </a>
+        </div>
 
-      <span class="logout-spn" >
+        <span class="logout-spn">
         <a href="#" style="color:#fff;">Sair</a>
 
       </span>
+      </div>
     </div>
-  </div>
-  <!-- /. NAV TOP  -->
-  <!-- NAV SIDE  -->
-  <nav class="navbar-default navbar-side" role="navigation">
-    <div class="sidebar-collapse">
-      <ul class="nav" id="main-menu">
+    <!-- /. NAV TOP  -->
+    <!-- NAV SIDE  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav" id="main-menu">
 
-        <li class="active-link">
-          <a href="gestaoSistema.html" ><i class="fa fa-cog "></i>Gestão do Sistema</a>
-        </li>
+          <li class="active-link">
+            <a href="gestaoSistema.html"><i class="fa fa-cog "></i>Gestão do Sistema</a>
+          </li>
 
-        <li class="active-link">
-          <a href="gestaoEntidades.html" ><i class="fa fa-cogs "></i>Gestão de Entidades</a>
-        </li>
+          <li class="active-link">
+            <a href="gestaoEntidades.html"><i class="fa fa-cogs "></i>Gestão de Entidades</a>
+          </li>
 
-        <li class="active-link">
-          <a href="masterUser.html"><i class="fa fa-star"></i>Usuário Master</a>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-  <!-- /. NAV SIDE  -->
-  <div id="page-wrapper" >
-    <div id="page-inner">
-      <div class="row">
-        <div class="col-md-10">
-         <h2 class="text-primary text-center">Cadastro de Clientes</h2>
-
-         <h2 class="text-primary text-left">Razão Social</h2>
-       </div>
-     </div>
-
-     <hr />
-
-
-     <!-- Primero bloco --> 
-     <form class="form-inline" d="formCadastro" data-toggle="validator" role="form" data-delay="350">
-
-      <div class="form-group">
-        <label for="cnpj">CNPJ/CPF</label>
-        <input type="text" required class="form-control" id="cnpj" size=10>
+          <li class="active-link">
+            <a href="masterUser.html"><i class="fa fa-star"></i>Usuário Master</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="form-group">
-        <label for="ie">I.E.</label>
-        <input type="text" required class="form-control" id="ie" size=9>
-      </div>
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+      <div id="page-inner">
+        <div class="row">
+          <div class="col-md-10">
+            <h2 class="text-primary text-center">Cadastro de Clientes</h2>
 
-      <div class="form-group">
-        <label for="im">I.M.</label>
-        <input type="text" required class="form-control" id="im" size=8>
-      </div>
+            <h2 class="text-primary text-left">Razão Social</h2>
+          </div>
+        </div>
 
-      <div class="form-group">
-        <label for="tel">Tel.</label>
-        <input type="tel" required class="form-control" id="tel1" size=13 placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$" >
-      </div>
+        <hr />
 
-      <div class="form-group">
-        <label for="endereco">Endereço</label>
-        <input type="text" required class="form-control" id="endereco" size=40>
-      </div>
 
-      <div class="form-group">
-        <label for="complemento">Complemento</label>
-        <input placeholder="Edíficio número 2" required type="text" class="form-control" id="complemento" size=15>
-      </div>
+        <!-- Primero bloco -->
+        <form class="form-inline" d="formCadastro" data-toggle="validator" role="form" data-delay="350">
 
-      <div class="form-group">
-        <label for="bairro">Bairro</label>
-        <input placeholder="Bairro" required type="text" class="form-control" id="bairro" size="15">
-      </div>
+          <div class="form-group">
+            <label for="cnpj">CNPJ/CPF</label>
+            <input type="text" required class="form-control" id="cnpj" size=10>
+          </div>
 
-      <div class="form-group">
-        <label for="cep">C.E.P</label>
-        <input placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
-      </div>
+          <div class="form-group">
+            <label for="ie">I.E.</label>
+            <input type="text" required class="form-control" id="ie" size=9>
+          </div>
 
-      <div class="form-group">
-        <label for="estados">UF</label>
-        <select required id="estados">
+          <div class="form-group">
+            <label for="im">I.M.</label>
+            <input type="text" required class="form-control" id="im" size=8>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Tel.</label>
+            <input type="tel" required class="form-control" id="tel1" size=13 placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+          </div>
+
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" required class="form-control" id="endereco" size=40>
+          </div>
+
+          <div class="form-group">
+            <label for="complemento">Complemento</label>
+            <input placeholder="Edíficio número 2" required type="text" class="form-control" id="complemento" size=15>
+          </div>
+
+          <div class="form-group">
+            <label for="bairro">Bairro</label>
+            <input placeholder="Bairro" required type="text" class="form-control" id="bairro" size="15">
+          </div>
+
+          <div class="form-group">
+            <label for="cep">C.E.P</label>
+            <input placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
+          </div>
+
+          <div class="form-group">
+            <label for="estados">UF</label>
+            <select required id="estados">
          <option value=""></option>
-       </select> 
-     </div>
+       </select>
+          </div>
 
-     <div class="form-group">
-      <label for="cidade">Cidade</label>
-      <select required id="cidades">
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <select required id="cidades">
 
       </select>
-    </div>
+          </div>
 
-    <!-- </form> -->
-    <!-- Fim do primeiro bloco -->
+          <!-- </form> -->
+          <!-- Fim do primeiro bloco -->
 
-    <br>
+          <br>
 
-    <!-- Bloco Dados Responśavel -->
-    <!-- <form class="form-inline"> -->
-    <h3 class="text-primary"> Dados responsável: </h3>
-    <div class="form-group">
-      <label for="exampleInputName2">Nome</label>
-      <input type="text" required class="form-control" id="nome1" size=52>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputName2">Tel</label>
-      <input required class="form-control" id="tel2" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$" size=13>
-    </div>
+          <!-- Bloco Dados Responśavel -->
+          <!-- <form class="form-inline"> -->
+          <h3 class="text-primary"> Dados responsável: </h3>
+          <div class="form-group">
+            <label for="exampleInputName2">Nome</label>
+            <input type="text" required class="form-control" id="nome1" size=52>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputName2">Tel</label>
+            <input required class="form-control" id="tel2" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$"
+              size=13>
+          </div>
 
-    <div class="form-group">
-      <label for="email1">Email</label>
-      <input type="email" required class="form-control" id="email1" size=76>
-    </div>
+          <div class="form-group">
+            <label for="email1">Email</label>
+            <input type="email" required class="form-control" id="email1" size=76>
+          </div>
 
-    <div class="form-group">
-      <label for="outros1">Outros</label>
-      <input type="email" required="true" class="form-control" id="outros1" size=75>
-    </div>
-    <!-- </form> -->
+          <div class="form-group">
+            <label for="outros1">Outros</label>
+            <input type="email" required="true" class="form-control" id="outros1" size=75>
+          </div>
+          <!-- </form> -->
 
-    <!-- Fim do Bloco Dados Responśavel -->
+          <!-- Fim do Bloco Dados Responśavel -->
 
-    <br>
+          <br>
 
-    <!-- Bloco Dados Operacional -->
-    <!-- <form class="form-inline"> -->
-    <h3 class="text-primary"> Dados operacional: </h3>
-    <div class="form-group">
-      <label for="nome2">Nome</label>
-      <input type="text" required class="form-control" id="nome2" size=52>
-    </div>
-    <div class="form-group">
-      <label for="tel3">Tel</label>
-      <input type="text" required class="form-control" id="tel3" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$" size=13>
-    </div>
+          <!-- Bloco Dados Operacional -->
+          <!-- <form class="form-inline"> -->
+          <h3 class="text-primary"> Dados operacional: </h3>
+          <div class="form-group">
+            <label for="nome2">Nome</label>
+            <input type="text" required class="form-control" id="nome2" size=52>
+          </div>
+          <div class="form-group">
+            <label for="tel3">Tel</label>
+            <input type="text" required class="form-control" id="tel3" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$"
+              size=13>
+          </div>
 
-    <div class="form-group">
-      <label for="email2">Email</label>
-      <input type="email" required="true" class="form-control" id="email2" size=76>
-    </div>
+          <div class="form-group">
+            <label for="email2">Email</label>
+            <input type="email" required="true" class="form-control" id="email2" size=76>
+          </div>
 
-    <div class="form-group">
-      <label for="outros2">Outros</label>
-      <input type="email" required="true" class="form-control" id="outros2" size=75>
-    </div>
-    <!-- </form> -->
+          <div class="form-group">
+            <label for="outros2">Outros</label>
+            <input type="email" required="true" class="form-control" id="outros2" size=75>
+          </div>
+          <!-- </form> -->
 
-    <!-- Fim do Bloco Operacional -->
+          <!-- Fim do Bloco Operacional -->
 
-    <br>
+          <br>
 
-    <!-- Bloco Dados Financeiro -->
-    <!-- <form class="form-inline"> -->
-    <h3 class="text-primary"> Dados financeiro: </h3>
-    <div class="form-group">
-      <label for="nome3">Nome</label>
-      <input type="text" required class="form-control" id="nome3" size=52>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputName2">Tel</label>
-      <input type="text" required="true" class="form-control" id="tel4" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$" size=13>
-    </div>
+          <!-- Bloco Dados Financeiro -->
+          <!-- <form class="form-inline"> -->
+          <h3 class="text-primary"> Dados financeiro: </h3>
+          <div class="form-group">
+            <label for="nome3">Nome</label>
+            <input type="text" required class="form-control" id="nome3" size=52>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputName2">Tel</label>
+            <input type="text" required="true" class="form-control" id="tel4" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$"
+              size=13>
+          </div>
 
-    <div class="form-group">
-      <label for="email3">Email</label>
-      <input type="email" required class="form-control" id="email3" size=76>
-    </div>
+          <div class="form-group">
+            <label for="email3">Email</label>
+            <input type="email" required class="form-control" id="email3" size=76>
+          </div>
 
-    <div class="form-group">
-      <label for="outros3">Outros</label>
-      <input type="email" required class="form-control" id="outros3" size=75>
-    </div>
-  <!-- </form> -->
+          <div class="form-group">
+            <label for="outros3">Outros</label>
+            <input type="email" required class="form-control" id="outros3" size=75>
+          </div>
+          <!-- </form> -->
 
-  <!-- Fim do Bloco Dados Financeiro -->
+          <!-- Fim do Bloco Dados Financeiro -->
 
-  <br>
+          <br>
 
-  <!-- Ultimo Bloco -->
-  <!-- <form class="form-inline"> -->
-    <div class="form-group">
-      <label for="dataContratacao">Data de Contratação</label>
-      <input type="date" required class="form-control" id="dataContratacao">
-    </div>
-    <div class="form-group">
-      <label for="dataRecisao">Data de Recisão</label>
-      <input type="date" required class="form-control" id="dataRecisao">
-    </div>
-    <div class="form-group">
-      <label for="valorMensal">Valor Mensal</label>
-      <input type="number" required class="form-control" id="valorMensal">
-    </div>
+          <!-- Ultimo Bloco -->
+          <!-- <form class="form-inline"> -->
+          <div class="form-group">
+            <label for="dataContratacao">Data de Contratação</label>
+            <input type="date" required class="form-control" id="dataContratacao">
+          </div>
+          <div class="form-group">
+            <label for="dataRecisao">Data de Recisão</label>
+            <input type="date" required class="form-control" id="dataRecisao">
+          </div>
+          <div class="form-group">
+            <label for="valorMensal">Valor Mensal</label>
+            <input type="number" required class="form-control" id="valorMensal">
+          </div>
 
-    <div class="form-group">
-      <label for="codigoControle">Código de Controle</label>
-      <input type="text" required class="form-control" id="codigoControle">
-    </div>
+          <div class="form-group">
+            <label for="codigoControle">Código de Controle</label>
+            <input type="text" required class="form-control" id="codigoControle">
+          </div>
 
-    <div class="form-group">
-      <label for="obs">Obs</label>
-      <textarea placeholder="Escreva aqui sua observação" id="obs" rows="5" cols="50">
+          <div class="form-group">
+            <label for="obs">Obs</label>
+            <textarea placeholder="Escreva aqui sua observação" id="obs" rows="5" cols="50">
       </textarea>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit" name="salvar">Salvar</button>
+          </div>
+
+
+        </form>
+
+        <!-- Fim o Ultimo Bloco -->
+
+
+
+        <!-- /. ROW  -->
+      </div>
+      <!-- /. PAGE INNER  -->
     </div>
-
-    <div class="form-group">
-      <button class="btn btn-primary" type="submit" name="salvar">Salvar</button>
-    </div>
-
-
-  </form>
-
-  <!-- Fim o Ultimo Bloco -->
-
-  
-
-  <!-- /. ROW  -->
-</div>
-<!-- /. PAGE INNER  -->
-</div>
-<!-- /. PAGE WRAPPER  -->
-</div>
-<div class="footer">
-
-
- <div class="row">
-  <div class="col-lg-12" >
-    &copy;  2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+    <!-- /. PAGE WRAPPER  -->
   </div>
-</div>
-</div>
+  <div class="footer">
 
 
-<!-- /. WRAPPER  -->
-<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-<!-- JQUERY SCRIPTS -->
-<script src="assets/js/lib/jquery-1.10.2.js"></script>
-<!-- BOOTSTRAP SCRIPTS -->
+    <div class="row">
+      <div class="col-lg-12">
+        &copy; 2017 egdoc.com | Design by:
+        <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+      </div>
+    </div>
+  </div>
 
 
-<script src="assets/js/lib/bootstrap.min.js"></script>
-<!-- CUSTOM SCRIPTS -->
-<!-- <script src="assets/js/custom.js"></script> -->
-<script src="assets/js/cadastroCliente.js"></script>
+  <!-- /. WRAPPER  -->
+  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+  <!-- JQUERY SCRIPTS -->
+  <script src="assets/js/lib/jquery-1.10.2.js"></script>
+  <!-- BOOTSTRAP SCRIPTS -->
 
-<script src="assets/js/lib/validator.min.js"></script>
+
+  <script src="assets/js/lib/bootstrap.min.js"></script>
+  <!-- CUSTOM SCRIPTS -->
+  <!-- <script src="assets/js/custom.js"></script> -->
+  <script src="assets/js/cadastroCliente.js"></script>
+
+  <script src="assets/js/lib/validator.min.js"></script>
 
 
 </body>
+
 </html>
