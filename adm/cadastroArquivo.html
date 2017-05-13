@@ -49,46 +49,46 @@
       <div class="sidebar-collapse">
         <ul class="nav" id="main-menu">
           <li class="active-link">
-              <a href="cadastroNovosUsuarios.html" aria-hidden="true"><i class="fa fa-cog "></i>Cadastro de Usuários</a>
-          
+            <a href="cadastroNovosUsuarios.html" aria-hidden="true"><i class="fa fa-cog "></i>Cadastro de Usuários</a>
 
-          <li class="active-link">
-            <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Cadastro de Instâncias</a>
-          </li>
-
-          <li class="active-link">
-            <a href="#"><i class="fa fa-star" aria-hidden="true"></i>Cadastro de Instrumentos</a>
-          
-
-          <li class="active-link">
-            <a href="#"><i class="fa fa-check" aria-hidden="true"></i>Consulta de Processos</a>
-          
-
-          <li class="active-link">
-            <a href="#"><i class="fa fa-handshake" aria-hidden="true"></i>Consulta de Protocolo</a>
 
             <li class="active-link">
-            <a href="#"><i class="fa fa-usd" aria-hidden="true"></i>Consulta de Movimentação</a>
+              <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Cadastro de Instâncias</a>
+            </li>
 
             <li class="active-link">
-            <a href="manutencaoArquivo.html"><i class="fa fa-file-archive-o" aria-hidden="true"></i>Manutenção de Arquivo</a>
+              <a href="#"><i class="fa fa-star" aria-hidden="true"></i>Cadastro de Instrumentos</a>
 
-            <li class="active-link">
-            <a href="cadastroArquivo.html"><i class="fa fa-file-text" aria-hidden="true"></i>Abertura de Arquivo</a>
 
-            <li class="active-link">
-            <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trocar senha</a>
+              <li class="active-link">
+                <a href="movimentacaoProcesso.html"><i class="fa fa-check" aria-hidden="true"></i>Consulta de Processos</a>
 
-            <li class="active-link">
-            <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Atualização de Dados de Perfil</a>
-          </li>
-          </li>
-          </li>
-          </li>
-          </li>
-          </li>
-          </li>
-          </li>
+
+                <li class="active-link">
+                  <a href="#"><i class="fa fa-handshake" aria-hidden="true"></i>Consulta de Protocolo</a>
+
+                  <li class="active-link">
+                    <a href="#"><i class="fa fa-usd" aria-hidden="true"></i>Consulta de Movimentação</a>
+
+                    <li class="active-link">
+                      <a href="manutencaoArquivo.html"><i class="fa fa-file-archive-o" aria-hidden="true"></i>Manutenção de Arquivo</a>
+
+                      <li class="active-link">
+                        <a href="cadastroArquivo.html"><i class="fa fa-file-text" aria-hidden="true"></i>Abertura de Arquivo</a>
+
+                        <li class="active-link">
+                          <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trocar senha</a>
+
+                          <li class="active-link">
+                            <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Atualização de Dados de Perfil</a>
+                          </li>
+                        </li>
+                      </li>
+                    </li>
+                  </li>
+                </li>
+              </li>
+            </li>
           </li>
 
         </ul>
@@ -107,61 +107,70 @@
         <hr />
         <!-- Primero bloco -->
         <!-- <form> -->
-        <form class="form-inline" d="formArquivo">
+        <form d="formArquivo">
 
           <!-- <div class="form-group">
           <label for="nomePasta">Nome da Pasta</label>
           <input type="text" required class="form-control" id="nomePasta" size=63>
         </div> -->
+          <div class="input-group">
+            <form>
+              <div class="input-group">
+                <div class="col-md-6">
+                  <label for="anexar">Nome da Pasta:</label>
+                  <input requierd type="text" class="form-control" id="pasta">
+                </div>
+                <div class="col-md-6">
+                  <label for="anexar">Anexar:</label>
+                  <input requierd type="file" class="form-control" id="anexar" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+text/plain, application/pdf">
+                </div>
+              </div>
 
-          <div class="form-group">
-            <label for="anexar">Nome da Pasta:</label>
-            <input requierd type="text" class="form-control" id="pasta">
+              <div class="input-group">
+                <div class="col-md-8">
+                  <label for="anexar">Comentário Adicional:</label>
+                  <input type="text" class="form-control" id="anexar" maxlength="40">
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+            </form>
           </div>
-
-          <div class="form-group">
-            <label for="anexar">Anexar:</label>
-            <input requierd type="file" class="form-control" id="anexar">
-          </div>
-
-          <br>
-
-          <div class="form-group">
-            <label for="comentarioAdicional">Comentário Adicional:</label>
-            <textarea placeholder="Escreva aqui sua observação" id="comentarioAdicional" rows="1" cols="30">
-      </textarea>
-          </div>
-
-          <br>
-
-          
-            <div style="height:375px" id="editor">
-
-            </div>
-          
-
-          <br>
-
-          <form class="form-inline">
-            <div class="form-group">
-              <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary" type="reset" name="limpar">Limpar Dados</button>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary" type="text" name="cancelar">Cancelar Cadastro</button>
-            </div>
-            <!-- </form> -->
-            <!-- Fim do Segundo Bloco -->
-
-            <!-- Terceiro Bloco -->
-            <!-- <form class="form-inline"> -->
-
-            <!-- Fim do Terceiro Bloco -->
-            <!--</form> -->
 
           </form>
+
+        <br>
+        <br>
+
+
+        <div style="height:375px" id="editor">
+
+        </div>
+
+
+        <br>
+
+        <form class="form-inline">
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="reset" name="limpar">Limpar Dados</button>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="text" name="cancelar">Cancelar Cadastro</button>
+          </div>
+          <!-- </form> -->
+          <!-- Fim do Segundo Bloco -->
+
+          <!-- Terceiro Bloco -->
+          <!-- <form class="form-inline"> -->
+
+          <!-- Fim do Terceiro Bloco -->
+          <!--</form> -->
+
+        </form>
         </form>
 
 
