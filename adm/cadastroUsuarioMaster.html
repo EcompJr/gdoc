@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EGDOC - Cadastro de Usuário Master</title>
+  <!-- BOOTSTRAP STYLES-->
+  <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+  <!-- FONTAWESOME STYLES-->
+  <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+  <!-- CUSTOM STYLES-->
+  <link href="../assets/css/custom.css" rel="stylesheet" />
+  <!-- GOOGLE FONTS-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+
+
+
+  <div id="wrapper">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="adjust-nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/logo.png" />
+        </a>
+        </div>
+
+        <span class="logout-spn">
+        <a href="#" style="color:#fff;">Sair</a>
+
+      </span>
+      </div>
+    </div>
+    <!-- /. NAV TOP  -->
+    <!-- NAV SIDE  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav" id="main-menu">
+          <li class="active-link">
+            <a href="cadastroNovosUsuarios.html" aria-hidden="true"><i class="fa fa-cog "></i>Cadastro de Usuários</a>
+
+
+            <li class="active-link">
+              <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Cadastro de Instâncias</a>
+            </li>
+
+            <li class="active-link">
+              <a href="#"><i class="fa fa-star" aria-hidden="true"></i>Cadastro de Instrumentos</a>
+
+
+              <li class="active-link">
+                <a href="movimentacaoProcesso.html"><i class="fa fa-check" aria-hidden="true"></i>Consulta de Processos</a>
+
+
+                <li class="active-link">
+                  <a href="#"><i class="fa fa-handshake" aria-hidden="true"></i>Consulta de Protocolo</a>
+
+                  <li class="active-link">
+                    <a href="#"><i class="fa fa-usd" aria-hidden="true"></i>Consulta de Movimentação</a>
+
+                    <li class="active-link">
+                      <a href="manutencaoArquivo.html"><i class="fa fa-file-archive-o" aria-hidden="true"></i>Manutenção de Arquivo</a>
+
+                      <li class="active-link">
+                        <a href="cadastroArquivo.html"><i class="fa fa-file-text" aria-hidden="true"></i>Abertura de Arquivo</a>
+
+                        <li class="active-link">
+                          <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trocar senha</a>
+
+                          <li class="active-link">
+                            <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Atualização de Dados de Perfil</a>
+                          </li>
+                        </li>
+                      </li>
+                    </li>
+                  </li>
+                </li>
+              </li>
+            </li>
+          </li>
+
+        </ul>
+      </div>
+
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+      <div id="page-inner">
+
+        <div class="row">
+          <div class="col-md-4">
+            <a class="navbar-brand" href="../index.html">
+           <img src="../assets/img/logo.png" />
+         </a>
+            <!-- <br><br><br><br> -->
+          </div>
+          <div class="col-md-4">
+
+            <br>
+            <br>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <h2 class="text-primary text-center">Dados do usuário master</h2>
+            <br>
+          </div>
+        </div>
+
+
+        <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
+          <div class="input-group">
+            <form>
+              <div class="input-group">
+                <div class="col-md-6">
+                  <label for="controle">Código de Controle:</label>
+                  <input type="text" class="form-control" id="controle" placeholder="Código Automático" readonly>
+                </div>
+                <div class="col-md-6">
+                  <label> Situação: </label>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked=""> Ativo
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option2"> Inativo
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="col-md-12">
+                  <label for="nome">Nome:</label>
+                  <input required type="text" class="form-control" id="nome" placeholder="Nome">
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="col-md-12">
+                  <label for="email">Email:</label>
+                  <input required type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="col-md-12">
+                  <label for="telefone">Tel:</label>
+                  <input required type="tel" class="form-control" id="telefone" size=16 data-error="Por favor, informe um Telefone correto."
+                    placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+                  <!--<div class="help-block with-errors"></div>-->
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="col-md-6">
+                  <label for="nome">CPF/CNPJ:</label>
+                  <input required type="text" class="form-control" id="nome" placeholder="Nome">
+                </div>
+                <div class="col-md-6">
+                  <label for="passwd">Senha:</label>
+                  <input required type="password" class="form-control" id="passwd" placeholder="Minimo de 4 caracteres" minlength="4">
+                </div>
+              </div>
+
+              <br>
+
+              <div class="input-group">
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+                <div class="col-md-4">
+                  <button type="reset" class="btn btn-primary">Resetar</button>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+        </form>
+
+
+      </div>
+      <!-- /. ROW  -->
+      <hr />
+
+
+      <!-- /. ROW  -->
+    </div>
+    <!-- /. PAGE INNER  -->
+  </div>
+  <!-- /. PAGE WRAPPER  -->
+  </div>
+  <div class="footer">
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /. WRAPPER  -->
+  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+  <!-- JQUERY SCRIPTS -->
+  <script src="../assets/js/lib/jquery-1.10.2.js"></script>
+  <!-- BOOTSTRAP SCRIPTS -->
+  <script src="../assets/js/lib/bootstrap.min.js"></script>
+  <!-- CUSTOM SCRIPTS -->
+  <!-- <script src="assets/js/custom.js"></script> -->
+
+  <script src="../assets/js/cadastroUsuarioMaster.js"></script>
+
+  <script src="../assets/js/lib/validator.min.js"></script>
+
+
+</body>
+
+</html>
