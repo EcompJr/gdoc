@@ -13,6 +13,10 @@
   <link href="../assets/css/custom.css" rel="stylesheet" />
   <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+  <!--API DO QUILL-->
+  <link href="../assets/css/quill.bubble.css" rel="stylesheet" />
+  <link href="../assets/css/quill.snow.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -68,6 +72,11 @@
         </div> -->
 
           <div class="form-group">
+            <label for="anexar">Nome da Pasta:</label>
+            <input requierd type="text" class="form-control" id="pasta">
+          </div>
+
+          <div class="form-group">
             <label for="anexar">Anexar:</label>
             <input requierd type="file" class="form-control" id="anexar">
           </div>
@@ -82,11 +91,11 @@
 
           <br>
 
-          <div class="form-group">
-            <label for="texto">Texto:</label>
-            <textarea placeholder="Escreva aqui seu texto" id="texto" rows="2" cols="60">
-      </textarea>
-          </div>
+          
+            <div style="height:375px" id="editor">
+
+            </div>
+          
 
           <br>
 
@@ -143,8 +152,11 @@
 
   <script src="../assets/js/lib/bootstrap.min.js"></script>
   <!-- CUSTOM SCRIPTS -->
-  <!-- <script src="assets/js/custom.js"></script> -->
   <script src="../assets/js/cadastroCliente.js"></script>
+
+  <script src="../assets/js/cadastroArquivo.js"></script>
+
+  <script src="../assets/js/lib/quill.min.js"></script>
 
 
 </body>
