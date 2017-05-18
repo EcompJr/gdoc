@@ -199,9 +199,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="email" class="col-md-3 control-label">CPF/CNPJ</label>
+                        <label for="email" class="col-md-3 control-label">CPF</label>
                         <div class="col-md-9">
-                            <input required type="text" class="form-control" name="email" placeholder="Digite seu CPF" required>
+                            <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" required type="text" class="form-control" name="email" placeholder="Digite seu CPF" required>
                         </div>
                     </div>
 
