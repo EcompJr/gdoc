@@ -115,89 +115,53 @@
                     </div>
 
 
-
-                    <div style="margin-left:10px" class="input-group">
-                        <form>
-                            <div class="input-group">
-                                <div class="col-md-4">
-                                    <label for="anexar">Instâncias:</label>
-                                    <input requierd type="text" class="form-control" id="anexar">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="anexar">Prazo:</label>
-                                    <input requierd type="number" class="form-control" id="anexar" placeholder="Em dias">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="anexar">Responsável:</label>
-                                    <input requierd type="text" class="form-control" id="anexar">
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <div class="col-md-4">
-                                    <label for="anexar">Instâncias:</label>
-                                    <input requierd type="text" class="form-control" id="anexar">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="anexar">Prazo:</label>
-                                    <input requierd type="number" class="form-control" id="anexar" placeholder="Em dias">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="anexar">Responsável:</label>
-                                    <input requierd type="text" class="form-control" id="anexar">
-                                </div>
-                            </div>
-
-
-                            <div class="input-group">
-                                <div class="col-md-4">
-                                    <label for="anexar">Instâncias:</label>
-                                    <input requierd type="text" class="form-control" id="anexar">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="anexar">Prazo:</label>
-                                    <input requierd type="number" class="form-control" id="anexar" placeholder="Em dias">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="anexar">Responsável:</label>
-                                    <input requierd type="text" class="form-control" id="anexar">
-                                </div>
-                            </div>
-
-
-                        </form>
+                    <div id="listas">
+                    <div class="row" id="1">
+                        <div class="form-group col-md-4">
+                            <label for="anexar">Instâncias:</label>
+                            <input required type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="anexar">Prazo:</label>
+                            <input required type="number" class="form-control" placeholder="Em dias">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="anexar">Responsável:</label>
+                            <select  type="text" class="form-control">
+                                <option value="" selected>Selecione o funcionário</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                     </div>
 
                     <br>
 
-                    <br>
-
-
-                    <br>
-
-                    <form class="form-inline">
-                        <div class="form-group">
-                        <button class="btn btn-primary" type="button" id="add_field" >Adicionar Produto</button>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <button class="btn btn-default" type="button" id="add_field">Adicionar Instâncias</button>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group col-md-2">
+                            <button class="btn btn-default" type="button" id="remove_field">Remover Instâncias</button>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="form-group col-md-2">
                             <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-md-2">
                             <button class="btn btn-primary" type="reset" name="limpar">Limpar Dados</button>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-md-2">
                             <button class="btn btn-primary" type="text" name="cancelar">Cancelar Cadastro</button>
                         </div>
-                        <!-- </form> -->
-                        <!-- Fim do Segundo Bloco -->
 
-                        <!-- Terceiro Bloco -->
-                        <!-- <form class="form-inline"> -->
-
-                        <!-- Fim do Terceiro Bloco -->
-                        <!--</form> -->
-
-                    </form>
+                    </div>
                 </form>
 
 
@@ -227,6 +191,8 @@
     <!-- JQUERY SCRIPTS -->
     <script src="../assets/js/lib/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->
+
+    <script src="../assets/js/cadastroInstancia.js"></script>
 
 
     <script src="../assets/js/lib/bootstrap.min.js"></script>
