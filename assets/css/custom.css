@@ -7,10 +7,10 @@
 
     100% To use For Personal And Commercial Use.
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
+
     ========================================================  */
 /*==============================================
-    GENERAL  STYLES    
+    GENERAL  STYLES
     =============================================*/
 body {
     font-family: 'Open Sans', sans-serif;
@@ -26,7 +26,7 @@ body {
     padding: 15px 15px;
     min-height: 600px;
     background:#F3F3F3;
-   
+
 }
 #page-inner {
     width:100%;
@@ -39,8 +39,14 @@ body {
     padding-top:15px;
 }
 /*==============================================
-    MENU STYLES    
+    MENU STYLES
     =============================================*/
+
+/* Classe apenas para pegar as tags que devem ser de modo scroll */
+.scrollMenu{
+  
+}
+
 
 .sidebar-collapse .nav {
 	padding:0;
@@ -58,7 +64,7 @@ font-size: 16px;
 }
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
-	
+
 	background:#F3F3F3;
 	outline:0;
 }
@@ -66,7 +72,7 @@ font-size: 16px;
 .navbar-side {
 	border:none;
 	background-color: #fff;
-	
+
 }
 .navbar-inverse {
 
@@ -93,9 +99,9 @@ min-height: 80px;
 .active-link {
     background-color:#f3f3f3;
 }
-    
+
 /*==============================================
-    DASHBOARD STYLES    
+    DASHBOARD STYLES
     =============================================*/
 .div-square {
     padding:5px;
@@ -163,7 +169,7 @@ min-height: 80px;
      text-decoration:none;
 }
 /*==============================================
-    FOOTER STYLES     
+    FOOTER STYLES
     =============================================*/
 .footer {
     background-color:#214761;
@@ -175,31 +181,29 @@ min-height: 80px;
 
 
     .footer > a, .footer>a:hover {
-       
+
         color:#fff;
     }
 
 /*==============================================
-    MEDIA QUERIES     
+    MEDIA QUERIES
     =============================================*/
- 
+
  @media(min-width:768px) {
      #page-wrapper{
                margin: 0 0 0 260px;
         padding: 15px 30px;
         min-height: 1050px;
-		
+
     }
-	
-	
+
+
     .navbar-side {
         z-index: 1;
         position: absolute;
         width: 260px;
-       
+
     }
 
- 
+
 }
-
-
