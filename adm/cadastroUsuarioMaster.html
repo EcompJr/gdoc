@@ -44,52 +44,62 @@
     <nav class="navbar-default navbar-side" role="navigation">
       <div class="sidebar-collapse">
         <ul class="nav" id="main-menu">
-          <li class="active-link">
-            <a href="cadastroNovosUsuarios.html" aria-hidden="true"><i class="fa fa-cog "></i>Cadastro de Usuários</a>
 
+
+       <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-cog "></i>Cadastro</a></li>
+         <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
+           <ul style="margin-top:-50px;"class="nav">
+          <li class="active-link">
+            <a href="cadastroNovosUsuarios.html" aria-hidden="true">Cadastro de Usuários</a>
+         </li>
 
             <li class="active-link">
-              <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Cadastro de Instâncias</a>
+              <a href="#">Cadastro de Instâncias</a>
             </li>
 
             <li class="active-link">
-              <a href="#"><i class="fa fa-star" aria-hidden="true"></i>Cadastro de Instrumentos</a>
+              <a href="#">Cadastro de Instrumentos</a>
+            </li>
+          </ul>
+          </div>
 
-
+           <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-check"></i>Consulta</a></li>
+            <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+              <ul style="margin-top:-50px;" class="nav">
               <li class="active-link">
-                <a href="movimentacaoProcesso.html"><i class="fa fa-check" aria-hidden="true"></i>Consulta de Processos</a>
-
+                <a href="movimentacaoProcesso.html">Consulta de Processos</a>
+              </li>
 
                 <li class="active-link">
-                  <a href="#"><i class="fa fa-handshake" aria-hidden="true"></i>Consulta de Protocolo</a>
-
+                  <a href="#">Consulta de Protocolo</a>
+                </li>
                   <li class="active-link">
-                    <a href="#"><i class="fa fa-usd" aria-hidden="true"></i>Consulta de Movimentação</a>
+                    <a href="#">Consulta de Movimentação</a>
+                  </li>
+                </ul>
+            </div>
 
+                <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-file-text"></i>Arquivo</a></li>
+                  <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+                    <ul style="margin-top:-50px;" class="nav">
                     <li class="active-link">
-                      <a href="manutencaoArquivo.html"><i class="fa fa-file-archive-o" aria-hidden="true"></i>Manutenção de Arquivo</a>
-
+                      <a href="manutencaoArquivo.html"><i class="" aria-hidden="true"></i>Manutenção de Arquivo</a>
+                    </li>
                       <li class="active-link">
-                        <a href="cadastroArquivo.html"><i class="fa fa-file-text" aria-hidden="true"></i>Abertura de Arquivo</a>
+                        <a href="cadastroArquivo.html"><i class="" aria-hidden="true"></i>Abertura de Arquivo</a>
+                      </li>
+                    </ul>
+                  </div>
 
                         <li class="active-link">
                           <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trocar senha</a>
-
+                        </li>
                           <li class="active-link">
                             <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Atualização de Dados de Perfil</a>
                           </li>
-                        </li>
-                      </li>
-                    </li>
-                  </li>
-                </li>
-              </li>
-            </li>
-          </li>
 
         </ul>
       </div>
-
 
     </nav>
     <!-- /. NAV SIDE  -->
@@ -229,6 +239,8 @@
   <script src="../assets/js/cadastroUsuarioMaster.js"></script>
 
   <script src="../assets/js/lib/validator.min.js"></script>
+
+  <script src= "../assets/js/custom.js"></script>
 
 
 </body>

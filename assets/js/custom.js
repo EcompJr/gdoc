@@ -9,8 +9,31 @@
 
     100% To use For Personal And Commercial Use.
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
+
     ========================================================  */
+
+    var acc = document.getElementsByClassName("scrollMenu");
+    var i;
+
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight == "0px"){
+
+          panel.style.maxHeight = panel.scrollHeight + "px";
+
+
+        } else {
+          panel.style.maxHeight ="0px";
+
+
+        }
+      }
+    }
+
 
 
 (function ($) {
@@ -18,7 +41,7 @@
     var mainApp = {
 
         main_fun: function () {
-           
+
             /*====================================
               LOAD APPROPRIATE MENU BAR
            ======================================*/
@@ -30,8 +53,8 @@
                 }
             });
 
-          
-     
+
+
         },
 
         initialization: function () {

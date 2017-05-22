@@ -222,33 +222,10 @@ text/plain, application/pdf">
 
   <script src="../assets/js/lib/quill.min.js"></script>
 
-<!-- Scroll para menu-->
-  <script>
-
-var acc = document.getElementsByClassName("scrollMenu");
-var i;
+  <script src= "../assets/js/custom.js"></script>
 
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
 
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight == "0px"){
-
-      panel.style.maxHeight = panel.scrollHeight + "px";
-
-
-    } else {
-      panel.style.maxHeight ="0px";
-
-
-    }
-  }
-}
-
-
-  </script>
 
 
 

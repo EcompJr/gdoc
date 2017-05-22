@@ -45,17 +45,59 @@
       <div class="sidebar-collapse">
         <ul class="nav" id="main-menu">
 
-          <li class="active-link">
-            <a href="#"><i class="fa fa-cog "></i>Cadastro Usuário</a>
-          </li>
 
+       <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-cog "></i>Cadastro</a></li>
+         <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
+           <ul style="margin-top:-50px;"class="nav">
           <li class="active-link">
-            <a href="#"><i class="fa fa-cogs "></i>Cadastro de Instância</a>
-          </li>
+            <a href="cadastroNovosUsuarios.html" aria-hidden="true">Cadastro de Usuários</a>
+         </li>
 
-          <li class="active-link">
-            <a href="#"><i class="fa fa-star"></i>Cadastro de Instrumento</a>
-          </li>
+            <li class="active-link">
+              <a href="#">Cadastro de Instâncias</a>
+            </li>
+
+            <li class="active-link">
+              <a href="#">Cadastro de Instrumentos</a>
+            </li>
+          </ul>
+          </div>
+
+           <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-check"></i>Consulta</a></li>
+            <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+              <ul style="margin-top:-50px;" class="nav">
+              <li class="active-link">
+                <a href="movimentacaoProcesso.html">Consulta de Processos</a>
+              </li>
+
+                <li class="active-link">
+                  <a href="#">Consulta de Protocolo</a>
+                </li>
+                  <li class="active-link">
+                    <a href="#">Consulta de Movimentação</a>
+                  </li>
+                </ul>
+            </div>
+
+                <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-file-text"></i>Arquivo</a></li>
+                  <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+                    <ul style="margin-top:-50px;" class="nav">
+                    <li class="active-link">
+                      <a href="manutencaoArquivo.html"><i class="" aria-hidden="true"></i>Manutenção de Arquivo</a>
+                    </li>
+                      <li class="active-link">
+                        <a href="cadastroArquivo.html"><i class="" aria-hidden="true"></i>Abertura de Arquivo</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                        <li class="active-link">
+                          <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trocar senha</a>
+                        </li>
+                          <li class="active-link">
+                            <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Atualização de Dados de Perfil</a>
+                          </li>
+
         </ul>
       </div>
 
@@ -155,8 +197,8 @@
             <label for="tel">Celular:</label>
             <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
           </div>
-          
-          
+
+
           <div class="form-group col-md-3">
             <label for="tel">WhatsApp:</label>
             <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
@@ -207,18 +249,18 @@
 
           </div>
 
-          
+
           <div class="row">
           <div class="form-group col-md-3">
             <label for="tel">Email</label>
             <input class="form-control" type="email">
           </div>
-          
+
           <div class="form-group col-md-4">
             <label for="bairro">Email para autorizar cadastro externo </label>
             <input class="form-control" placeholder="Email" type="email" class="form-control" id="emailExterno">
           </div>
-          
+
           <div class="form-group col-md-4">
             <label for="bairro">Email para autorizar cadastro interno</label>
             <input class="form-control" placeholder="Email" type="email" class="form-control" id="emailInterno">
@@ -291,6 +333,8 @@
   <script src="../assets/js/cadastroNovosUsuarios.js"></script>
 
   <script src="../assets/js/lib/validator.min.js"></script>
+
+  <script src= "../assets/js/custom.js"></script>
 
 
 </body>
