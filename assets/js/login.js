@@ -20,6 +20,7 @@ $(document).ready(function () {
         $('#signupbox').hide();
     });
 
+    /* Tela de Cadastro */
     $('#empresa').keyup(function () {
 
         var string = $('#empresa').val();
@@ -31,6 +32,7 @@ $(document).ready(function () {
         var numero = $('#celular').val();
         $('#whatsapp').val(numero);
     });
+    /* Tela de Cadastro */
 
 
 
