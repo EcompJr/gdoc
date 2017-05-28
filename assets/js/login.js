@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-    // Iniclalmente estes div ficam escondidos
-    $('#recoverybox').hide();
-    $('#signupbox').hide();
-
     $('#recuperar').click(function () {
         $('#loginbox').hide();
         $('#recoverybox').show();
