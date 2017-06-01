@@ -8,6 +8,7 @@
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
   <link href="../assets/css/custom.css" rel="stylesheet" />
+  <link href="../assets/css/jquery-ui-1.12.1.min.css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 
@@ -128,13 +129,13 @@
           <div class="row">
             <div class="col-md-4">
               <label for="periodoInicio">Data Inicial</label>
-              <input required="true" type="date" class="form-control" name="periodoInicio" id="periodoInicio">
+              <input required="true" id="datepicker" type="text" class="form-control" name="periodoInicio" id="periodoInicio">
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
               <label for="periodoFim">Data Final</label>
-              <input required="true" type="date" class="form-control" name="periodoFim" id="periodoFim">
+              <input required="true" id="datepicker1" type="text" class="form-control" name="periodoFim" id="periodoFim">
             </div>
           </div>
 
@@ -178,8 +179,21 @@
 
 
   <script src="../assets/js/lib/jquery-1.10.2.js"></script>
+  <script src="../assets/js/lib/jquery-ui-1.12.1.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
   <script src="../assets/js/custom.js"></script>
+
+  <script>
+        $.datepicker.setDefaults( $.datepicker.regional[ "pt" ] );
+
+        $(function () {
+            
+            $("#datepicker").datepicker();
+
+            $("#datepicker1").datepicker();
+
+        });
+    </script>
 
 
 </body>
