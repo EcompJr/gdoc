@@ -46,15 +46,19 @@
         <ul class="nav" id="main-menu">
 
           <li class="active-link">
-            <a href="gestaoSistema.html"><i class="fa fa-cog "></i>Gestão do Sistema</a>
+            <a href="gestaoSistema.html">Gestão do Sistema</a>
           </li>
 
           <li class="active-link">
-            <a href="gestaoEntidades.html"><i class="fa fa-cogs "></i>Gestão de Entidades</a>
+            <a href="gestaoEntidades.html">Gestão de Entidades</a>
           </li>
 
           <li class="active-link">
-            <a href="masterUser.html"><i class="fa fa-star"></i>Usuário Master</a>
+            <a href="masterUser.html">Usuário Master</a>
+          </li>
+
+          <li class="active-link">
+            <a href="auditoria.html">Auditoria</a>
           </li>
         </ul>
       </div>
@@ -82,17 +86,17 @@
 
             <div class="form-group col-md-3">
               <label for="cnpj">CNPJ/CPF</label>
-              <input type="text" required class="form-control" id="cnpj" size=10>
+              <input type="text" required class="form-control" id="cnpj">
             </div>
 
             <div class="form-group col-md-3">
               <label for="ie">I.E.</label>
-              <input type="text" required class="form-control" id="ie" size=9>
+              <input type="text" required class="form-control" id="ie">
             </div>
 
             <div class="form-group col-md-3">
               <label for="im">I.M.</label>
-              <input type="text" required class="form-control" id="im" size=8>
+              <input type="text" required class="form-control" id="im">
             </div>
           </div>
 
@@ -100,7 +104,7 @@
 
             <div class="form-group col-md-3">
               <label for="cep">C.E.P</label>
-              <input placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
+              <input id="cep" placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" >
             </div>
 
             <div class="form-group col-md-3">
@@ -113,7 +117,7 @@
 
             <div class="form-group col-md-3">
               <label for="cidade">Cidade</label>
-              <select class="form-control" required id="cidades">
+              <select id="cidades" class="form-control" required>
               </select>
             </div>
           </div>
@@ -126,28 +130,22 @@
 
             <div class="form-group col-md-3">
               <label for="endereco">Endereço</label>
-              <input type="text" required class="form-control" id="endereco" size=40>
+              <input type="text" required class="form-control" id="endereco">
             </div>
 
             <div class="form-group col-md-3">
             <label for="bairro">Bairro</label>
-            <input placeholder="Bairro" required type="text" class="form-control" id="bairro" size="15">
+            <input placeholder="Bairro" required type="text" class="form-control" id="bairro">
           </div>
 
             <div class="form-group col-md-3">
               <label for="complemento">Complemento</label>
-              <input placeholder="Edíficio número 2" type="text" class="form-control" id="complemento" size=15>
+              <input placeholder="Edíficio número 2" type="text" class="form-control" id="complemento">
             </div>
           </div>
 
-
-          <!-- </form> -->
-          <!-- Fim do primeiro bloco -->
-
           <br>
-
-          <!-- Bloco Dados Responśavel -->
-          <!-- <form class="form-inline"> -->
+          
           <h3 class="text-primary"> Dados responsável: </h3>
 
           <div class="row">
@@ -170,14 +168,9 @@
             <input type="email" required class="form-control" id="outros1">
           </div>
           </div>
-          <!-- </form> -->
 
-          <!-- Fim do Bloco Dados Responśavel -->
+         <br>
 
-          <br>
-
-          <!-- Bloco Dados Operacional -->
-          <!-- <form class="form-inline"> -->
           <h3 class="text-primary"> Dados operacional: </h3>
 
           <div class="row">
@@ -200,14 +193,9 @@
             <input type="email" required="true" class="form-control" id="outros2">
           </div>
           </div>
-          <!-- </form> -->
-
-          <!-- Fim do Bloco Operacional -->
 
           <br>
 
-          <!-- Bloco Dados Financeiro -->
-          <!-- <form class="form-inline"> -->
           <h3 class="text-primary"> Dados financeiro: </h3>
 
           <div class="row">
@@ -231,14 +219,8 @@
             <input type="email" required class="form-control" id="outros3" size=75>
           </div>
           </div>
-          <!-- </form> -->
-
-          <!-- Fim do Bloco Dados Financeiro -->
 
           <br>
-
-          <!-- Ultimo Bloco -->
-          <!-- <form class="form-inline"> -->
 
           <div class="row">
           <div class="form-group col-md-4">
@@ -280,11 +262,7 @@
             <button class="btn btn-primary" type="submit" name="salvar">Salvar</button>
           </div>
 
-
         </form>
-
-        <!-- Fim o Ultimo Bloco -->
-
 
 
         <!-- /. ROW  -->
@@ -305,18 +283,9 @@
   </div>
 
 
-  <!-- /. WRAPPER  -->
-  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-  <!-- JQUERY SCRIPTS -->
   <script src="../assets/js/lib/jquery-1.10.2.js"></script>
-  <!-- BOOTSTRAP SCRIPTS -->
-
-
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <!-- CUSTOM SCRIPTS -->
-  <!-- <script src="assets/js/custom.js"></script> -->
   <script src="../assets/js/cadastroCliente.js"></script>
-
   <script src="../assets/js/lib/validator.min.js"></script>
 
 

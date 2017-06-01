@@ -5,13 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EGDOC - Cadastro de Usuário Master</title>
-  <!-- BOOTSTRAP STYLES-->
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
-  <!-- FONTAWESOME STYLES-->
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
-  <!-- CUSTOM STYLES-->
   <link href="../assets/css/custom.css" rel="stylesheet" />
-  <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 
@@ -46,57 +42,57 @@
         <ul class="nav" id="main-menu">
 
 
-       <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-cog "></i>Cadastro</a></li>
-         <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
-           <ul style="margin-top:-50px;"class="nav">
-          <li class="active-link">
-            <a href="cadastroNovosUsuarios.html" aria-hidden="true">Cadastro de Usuários</a>
-         </li>
+          <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Cadastro</a></li>
+          <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
+            <ul style="margin-top:-50px;" class="nav">
+              <li class="active-link">
+                <a href="cadastroNovosUsuarios.html" aria-hidden="true">Cadastro de Usuários</a>
+              </li>
 
-            <li class="active-link">
-              <a href="#cadastroInstancias.html">Cadastro de Instâncias</a>
-            </li>
+              <li class="active-link">
+                <a href="cadastroInstancias.html">Cadastro de Instâncias</a>
+              </li>
 
-            <li class="active-link">
-              <a href="#cadastroInstrumento.html">Cadastro de Instrumentos</a>
-            </li>
-          </ul>
+              <li class="active-link">
+                <a href="cadastroInstrumento.html">Cadastro de Instrumentos</a>
+              </li>
+            </ul>
           </div>
 
-           <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-check"></i>Consulta</a></li>
-            <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
-              <ul style="margin-top:-50px;" class="nav">
+          <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Consulta</a></li>
+          <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+            <ul style="margin-top:-50px;" class="nav">
               <li class="active-link">
                 <a href="movimentacaoProcesso.html">Consulta de Processos</a>
               </li>
 
-                <li class="active-link">
-                  <a href="#">Consulta de Protocolo</a>
-                </li>
-                  <li class="active-link">
-                    <a href="#">Consulta de Movimentação</a>
-                  </li>
-                </ul>
-            </div>
+              <li class="active-link">
+                <a href="#">Consulta de Protocolo</a>
+              </li>
+              <li class="active-link">
+                <a href="#">Consulta de Movimentação</a>
+              </li>
+            </ul>
+          </div>
 
-                <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-file-text"></i>Arquivo</a></li>
-                  <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
-                    <ul style="margin-top:-50px;" class="nav">
-                    <li class="active-link">
-                      <a href="manutencaoArquivo.html"><i class="" aria-hidden="true"></i>Manutenção de Arquivo</a>
-                    </li>
-                      <li class="active-link">
-                        <a href="cadastroArquivo.html"><i class="" aria-hidden="true"></i>Abertura de Arquivo</a>
-                      </li>
-                    </ul>
-                  </div>
+          <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Arquivo</a></li>
+          <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+            <ul style="margin-top:-50px;" class="nav">
+              <li class="active-link">
+                <a href="manutencaoArquivo.html">Manutenção de Arquivo</a>
+              </li>
+              <li class="active-link">
+                <a href="cadastroArquivo.html">Abertura de Arquivo</a>
+              </li>
+            </ul>
+          </div>
 
-                        <li class="active-link">
-                          <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trocar senha</a>
-                        </li>
-                          <li class="active-link">
-                            <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Atualização de Dados de Perfil</a>
-                          </li>
+          <li class="active-link">
+            <a href="#">Trocar senha</a>
+          </li>
+          <li class="active-link">
+            <a href="#">Atualização de Dados de Perfil</a>
+          </li>
 
         </ul>
       </div>
@@ -111,7 +107,6 @@
             <a class="navbar-brand" href="../index.html">
            <img src="../assets/img/logo.png" />
          </a>
-            <!-- <br><br><br><br> -->
           </div>
           <div class="col-md-4">
 
@@ -184,7 +179,8 @@
 
             <div class="form-group col-md-3">
               <label for="nome">CPF</label>
-              <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" required type="text" class="form-control" id="nome" placeholder="Nome">
+              <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
+                required type="text" class="form-control" id="nome" placeholder="Nome">
             </div>
           </div>
 
@@ -227,20 +223,11 @@
   </div>
 
 
-  <!-- /. WRAPPER  -->
-  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-  <!-- JQUERY SCRIPTS -->
   <script src="../assets/js/lib/jquery-1.10.2.js"></script>
-  <!-- BOOTSTRAP SCRIPTS -->
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <!-- CUSTOM SCRIPTS -->
-  <!-- <script src="assets/js/custom.js"></script> -->
-
   <script src="../assets/js/cadastroUsuarioMaster.js"></script>
-
   <script src="../assets/js/lib/validator.min.js"></script>
-
-  <script src= "../assets/js/custom.js"></script>
+  <script src="../assets/js/custom.js"></script>
 
 
 </body>

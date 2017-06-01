@@ -1,145 +1,187 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EGDOC - Relatório de Utilização</title>
-  <!-- BOOTSTRAP STYLES-->
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
-  <!-- FONTAWESOME STYLES-->
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
-  <!-- CUSTOM STYLES-->
   <link href="../assets/css/custom.css" rel="stylesheet" />
-  <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
+
 <body>
 
 
 
   <div id="wrapper">
-   <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="adjust-nav">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="adjust-nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand" href="../index.html">
           <img src="../assets/img/logo.png" />
         </a>
-      </div>
+        </div>
 
-      <span class="logout-spn" >
+        <span class="logout-spn">
         <a href="#" style="color:#fff;">Sair</a>
 
       </span>
+      </div>
     </div>
-  </div>
-  <!-- /. NAV TOP  -->
-  <!-- NAV SIDE  -->
-  <nav class="navbar-default navbar-side" role="navigation">
-    <div class="sidebar-collapse">
-      <ul class="nav" id="main-menu">
+    <!-- /. NAV TOP  -->
+    <!-- NAV SIDE  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav" id="main-menu">
 
-        <li class="active-link">
-          <a href="gestaoSistema.html" ><i class="fa fa-cog "></i>Gestão do Sistema</a>
-        </li>
+          <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Cadastro</a></li>
+          <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
+            <ul style="margin-top:-50px;" class="nav">
+              <li class="active-link">
+                <a href="cadastroNovosUsuarios.html" aria-hidden="true">Cadastro de Usuários</a>
+              </li>
 
-        <li class="active-link">
-          <a href="gestaoEntidades.html" ><i class="fa fa-cogs "></i>Gestão de Entidades</a>
-        </li>
+              <li class="active-link">
+                <a href="cadastroInstancias.html">Cadastro de Instâncias</a>
+              </li>
 
-        <li class="active-link">
-          <a href="masterUser.html"><i class="fa fa-star"></i>Usuário Master</a>
-        </li>
-      </ul>
-    </div>
+              <li class="active-link">
+                <a href="cadastroInstrumento.html">Cadastro de Instrumentos</a>
+              </li>
+            </ul>
+          </div>
 
-  </nav>
-  <!-- /. NAV SIDE  -->
-  <div id="page-wrapper" >
-    <div id="page-inner">
-      <div class="row">
-        <div class="col-md-4">
-         <a class="navbar-brand" href="../index.html">
+          <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Consulta</a></li>
+          <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+            <ul style="margin-top:-50px;" class="nav">
+              <li class="active-link">
+                <a href="movimentacaoProcesso.html">Consulta de Processos</a>
+              </li>
+
+              <li class="active-link">
+                <a href="#">Consulta de Protocolo</a>
+              </li>
+              <li class="active-link">
+                <a href="#">Consulta de Movimentação</a>
+              </li>
+            </ul>
+          </div>
+
+          <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Arquivo</a></li>
+          <div class="sidebar-collapse" style="max-height:223px;overflow: hidden;transition:max-height 0.2s ease-out;">
+            <ul style="margin-top:-50px;" class="nav">
+              <li class="active-link">
+                <a href="manutencaoArquivo.html">Manutenção de Arquivo</a>
+              </li>
+              <li class="active-link">
+                <a href="cadastroArquivo.html">Abertura de Arquivo</a>
+              </li>
+            </ul>
+          </div>
+
+          <li class="active-link">
+            <a href="#">Trocar senha</a>
+          </li>
+          <li class="active-link">
+            <a href="#">Atualização de Dados de Perfil</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+      <div id="page-inner">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="navbar-brand" href="../index.html">
            <img src="../assets/img/logo.png" />
          </a>
-         <!-- <br><br><br><br> -->
-       </div>
-       <div class="col-md-4">
+            <!-- <br><br><br><br> -->
+          </div>
+          <div class="col-md-4">
 
-         <br>
-         <h2 class="text-primary">Razão Social</h2>
-
-
-       </div>
-     </div>
-
-     <br><br>
-
-     <div class="row">
-
-     <h3 > Relatório de Utilização:</h3>
-      <form class="form-inline">
-       <div class="form-group">
-         <label for="exampleInputName2">Período</label>
-         <input required="true" type="date" class="form-control" id="periodoInicio" size=20>
-       </div>
-       <div class="form-group">
-         <label for="exampleInputEmail2">de</label>
-         <input required="true" type="date" class="form-control" id="periodoFim" size=20>
-       </div>
-     </form>
-
-     <br>
-
-     <form class="form-inline">
-
-       <div class="form-group">
-         <label for="transacao">Transação:</label>
-         <input required="true" placeholder="Transação" type="text" class="form-control" id="transacao">
-       </div>
-     </form>
-
-     <br>
+            <br>
+            <h2 class="text-primary">Razão Social</h2>
 
 
-     <input type="button" id="relatório" value="Relatório">
+          </div>
+        </div>
+
+        <br><br>
+
+        <form>
+          <div class="row">
+            <div class="col-md-12">
+              <h3> Relatório de Utilização:</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <label for="periodoInicio">Data Inicial</label>
+              <input required="true" type="date" class="form-control" name="periodoInicio" id="periodoInicio">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="periodoFim">Data Final</label>
+              <input required="true" type="date" class="form-control" name="periodoFim" id="periodoFim">
+            </div>
+          </div>
 
 
-   </div>
-   <!-- /. ROW  -->
-   <hr />
-
-   <!-- /. ROW  -->
- </div>
- <!-- /. PAGE INNER  -->
-</div>
-<!-- /. PAGE WRAPPER  -->
-</div>
-</div>
-<div class="footer">
+          <div class="row">
+            <div class="col-md-4">
+              <label for="transacao">Transação:</label>
+              <input required="true" placeholder="Transação" type="text" class="form-control" name="transacao" id="transacao">
+            </div>
+          </div>
 
 
- <div class="row">
-  <div class="col-lg-12" >
-    &copy;  2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+
+          <div class="row" style="padding-top:40px">
+            <div class="col-md-6">
+              <button class="btn btn-primary" type="submit" id="relatório">Gerar Relatório</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- /. ROW  -->
+      <hr />
+
+      <!-- /. ROW  -->
+    </div>
+    <!-- /. PAGE INNER  -->
   </div>
-</div>
-</div>
+  <!-- /. PAGE WRAPPER  -->
+  </div>
+  </div>
+  <div class="footer">
 
 
-<!-- /. WRAPPER  -->
-<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-<!-- JQUERY SCRIPTS -->
-<script src="../assets/js/lib/jquery-1.10.2.js"></script>
-<!-- BOOTSTRAP SCRIPTS -->
-<script src="../assets/js/lib/bootstrap.min.js"></script>
-<!-- CUSTOM SCRIPTS -->
-<script src="../assets/js/custom.js"></script>
+    <div class="row">
+      <div class="col-lg-12">
+        &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/lib/jquery-1.10.2.js"></script>
+  <script src="../assets/js/lib/bootstrap.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
 
 
 </body>
+
 </html>

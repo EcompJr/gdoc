@@ -45,62 +45,62 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
-                  <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-cog "></i>Cadastro</a></li>
+                    <li class="active-link scrollMenu"><a href="#">Cadastro</a></li>
                     <div style="max-height:223px;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
-                      <ul style="margin-top:-50px;"class="nav">
-                     <li class="active-link">
-                       <a href="cadastroNovosUsuarios.html" aria-hidden="true">Cadastro de Usuários</a>
-                    </li>
-
-                       <li class="active-link">
-                         <a href="#cadastroInstancias.html">Cadastro de Instâncias</a>
-                       </li>
-
-                       <li class="active-link">
-                         <a href="#cadastroInstrumento.html">Cadastro de Instrumentos</a>
-                       </li>
-                     </ul>
-                     </div>
-
-                       <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-check"></i>Consulta</a></li>
-                        <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
-                          <ul style="margin-top:-50px;" class="nav">
-                          <li class="active-link">
-                            <a href="movimentacaoProcesso.html">Consulta de Processos</a>
-                          </li>
+                        <ul style="margin-top:-50px;" class="nav">
+                            <li class="active-link">
+                                <a href="cadastroNovosUsuarios.html">Cadastro de Usuários</a>
+                            </li>
 
                             <li class="active-link">
-                              <a href="#">Consulta de Protocolo</a>
+                                <a href="#cadastroInstancias.html">Cadastro de Instâncias</a>
                             </li>
-                              <li class="active-link">
+
+                            <li class="active-link">
+                                <a href="#cadastroInstrumento.html">Cadastro de Instrumentos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Consulta</a></li>
+                    <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+                        <ul style="margin-top:-50px;" class="nav">
+                            <li class="active-link">
+                                <a href="movimentacaoProcesso.html">Consulta de Processos</a>
+                            </li>
+
+                            <li class="active-link">
+                                <a href="#">Consulta de Protocolo</a>
+                            </li>
+                            <li class="active-link">
                                 <a href="#">Consulta de Movimentação</a>
-                              </li>
-                            </ul>
-                        </div>
+                            </li>
+                        </ul>
+                    </div>
 
-                            <li class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="fa fa-file-text"></i>Arquivo</a></li>
-                              <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
-                                <ul style="margin-top:-50px;" class="nav">
-                                <li class="active-link">
-                                  <a href="manutencaoArquivo.html"><i class="" aria-hidden="true"></i>Manutenção de Arquivo</a>
-                                </li>
-                                  <li class="active-link">
-                                    <a href="cadastroArquivo.html"><i class="" aria-hidden="true"></i>Abertura de Arquivo</a>
-                                  </li>
-                                </ul>
-                              </div>
+                    <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Arquivo</a></li>
+                    <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
+                        <ul style="margin-top:-50px;" class="nav">
+                            <li class="active-link">
+                                <a href="manutencaoArquivo.html">Manutenção de Arquivo</a>
+                            </li>
+                            <li class="active-link">
+                                <a href="cadastroArquivo.html">Abertura de Arquivo</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                                    <li class="active-link">
-                                      <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Trocar senha</a>
-                                    </li>
-                                      <li class="active-link">
-                                        <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Atualização de Dados de Perfil</a>
-                                      </li>
+                    <li class="active-link">
+                        <a href="#">Trocar senha</a>
+                    </li>
+                    <li class="active-link">
+                        <a href="#">Atualização de Dados de Perfil</a>
+                    </li>
 
-                    </ul>
-                  </div>
+                </ul>
+            </div>
 
-                </nav>
+        </nav>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper">
             <div id="page-inner">
@@ -111,14 +111,8 @@
                 </div>
 
                 <hr />
-                <!-- Primero bloco -->
-                <!-- <form> -->
-                <form d="formArquivo">
 
-                    <!-- <div class="form-group">
-          <label for="nomePasta">Nome da Pasta</label>
-          <input type="text" required class="form-control" id="nomePasta" size=63>
-        </div> -->
+                <form d="formArquivo">
 
                     <div class="form-group">
                         <label for="anexar">Grupo:</label>
@@ -127,22 +121,22 @@
 
 
                     <div id="listas">
-                    <div class="row" id="1">
-                        <div class="form-group col-md-4">
-                            <label for="anexar">Instâncias:</label>
-                            <input required type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="anexar">Prazo:</label>
-                            <input required type="number" class="form-control" placeholder="Em dias">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="anexar">Responsável:</label>
-                            <select  type="text" class="form-control">
+                        <div class="row" id="1">
+                            <div class="form-group col-md-4">
+                                <label for="anexar">Instâncias:</label>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="anexar">Prazo:</label>
+                                <input required type="number" class="form-control" placeholder="Em dias">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="anexar">Responsável:</label>
+                                <select type="text" class="form-control">
                                 <option value="" selected>Selecione o funcionário</option>
                             </select>
+                            </div>
                         </div>
-                    </div>
 
                     </div>
 
@@ -205,7 +199,7 @@
 
     <script src="../assets/js/cadastroInstancia.js"></script>
 
-    <script src= "../assets/js/custom.js"></script>
+    <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/lib/bootstrap.min.js"></script>
     <!-- CUSTOM SCRIPTS -->
 
