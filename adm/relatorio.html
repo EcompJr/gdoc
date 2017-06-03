@@ -110,20 +110,13 @@
             <a class="navbar-brand" href="../index.html">
            <img src="../assets/img/logo.png" />
          </a>
-            <!-- <br><br><br><br> -->
           </div>
-          <div class="col-md-4">
-
-            <br>
-            <h2 class="text-primary">Razão Social</h2>
-
-
+          <div class="col-md-4" style="padding-top:50px">
+            <h2>Razão Social</h2>
           </div>
         </div>
 
-        <br><br>
-
-        <form>
+        <form data-toggle="validator" role="form">
           <div class="row">
             <div class="col-md-12">
               <h3> Relatório de Utilização:</h3>
@@ -133,13 +126,13 @@
           <div class="row">
             <div class="col-md-4">
               <label for="periodoInicio">Data Inicial</label>
-              <input required="true" id="datepicker" type="text" class="form-control" name="periodoInicio" id="periodoInicio">
+              <input required id="datepicker" type="text" class="form-control" name="periodoInicio" id="periodoInicio">
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
               <label for="periodoFim">Data Final</label>
-              <input required="true" id="datepicker1" type="text" class="form-control" name="periodoFim" id="periodoFim">
+              <input required id="datepicker1" type="text" class="form-control" name="periodoFim" id="periodoFim">
             </div>
           </div>
 
@@ -147,7 +140,7 @@
           <div class="row">
             <div class="col-md-4">
               <label for="transacao">Transação:</label>
-              <input required="true" placeholder="Transação" type="text" class="form-control" name="transacao" id="transacao">
+              <input required placeholder="Transação" type="text" class="form-control" name="transacao" id="transacao">
             </div>
           </div>
 
@@ -155,7 +148,7 @@
 
           <div class="row" style="padding-top:40px">
             <div class="col-md-6">
-              <button class="btn btn-primary" type="submit" id="relatório">Gerar Relatório</button>
+              <button class="btn btn-default" type="submit" id="relatório">Gerar Relatório</button>
             </div>
           </div>
         </form>
@@ -186,6 +179,7 @@
   <script src="../assets/js/lib/jquery-ui-1.12.1.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
   <script src="../assets/js/custom.js"></script>
+  <script src="../assets/js/lib/validator.min.js"></script>
 
   <script>
         $.datepicker.setDefaults( $.datepicker.regional[ "pt" ] );
