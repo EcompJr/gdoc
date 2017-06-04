@@ -12,10 +12,20 @@
 /*==============================================
     GENERAL  STYLES
     =============================================*/
-body {
+/*body {
     font-family: 'Open Sans', sans-serif;
     line-height:30px;
+}*/
+html{
+  font-size: 62.5%;
+  color: rgba(33, 33, 33, 0.87);
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+    margin:0;
+}
+
 
  #wrapper {
     width: 100%;
