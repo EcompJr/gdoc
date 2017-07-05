@@ -1,9 +1,25 @@
+//Quadno o documento carregar
 $(document).ready(function() {
 
-	console.log("sdasda");
+	var request = {cadastroUsuarioExterno:"true"};
 
-	$('#btn-signup').click(function() {
-		alert("");
+	//faz requisição ajax ao servidor
+	$.ajax({
+		//para esse caminho
+		url: "/../../application/controller/routes.php",
+		//por esse método
+		type: "GET",
+		//essas informações
+		data: request,
+		//em caso de sucesso
+		success: function(response){
+			/*
+				#CODE
+			*/
+		}
+
+
 	});
+	
 	
 });

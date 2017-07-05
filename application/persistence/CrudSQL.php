@@ -24,7 +24,7 @@ class CrudSQL
     }
 
     public function insertNewUser(){
-    	
+    	return "INSERT INTO user (Cpf, Nome, Email, Senha, Tipo, Telefone, Endereco) VALUES (?, ?, ?, ?, ?, ?, ?)";
     }
 }
 
