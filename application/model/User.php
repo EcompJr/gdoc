@@ -14,7 +14,7 @@ class Usuarios
 	private $telefone;
 	private $endereco;
 	
-	public function __construct($idUser, $cpf, $nome, $email, $senha, $tipo, $telefone, $endereco) {
+	public function __construct($cpf, $nome, $email, $senha, $tipo, $telefone, $endereco) {
 
 		$this->$idUser = $idUser;
 		$this->$cpf = $cpf;
@@ -26,15 +26,6 @@ class Usuarios
 		$this->$endereco = $endereco;
 
 	}
-
-
-	public function setIdUser($idUser) {
-		$this->idUser = $idUser; 
-	}
-	
-	public function getIdUser() {
-		return $this->idUser;
-		 }
 	
 	public function setCpf($cpf) {
 		$this->cpf = $cpf; 

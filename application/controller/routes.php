@@ -11,7 +11,7 @@ if (isset($_GET['cadastroUsuarioExterno'])) {
 	$name = $_GET['name'];
 	if(isset($name)){
 		//Tenta criar requisição
-		if ( (new controllerUser())->registerUser($idUser,$cpf,$nome,$email,$senha,$tipo,$telefone,$endereco)) {
+		if ( (new controllerUser())->registerUser($cpf,$nome,$email,$senha,$tipo,$telefone,$endereco)) {
 			//OK se conseguiu
 			header("HTTP/1.0 200 OK");
 		}
