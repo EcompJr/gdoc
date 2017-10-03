@@ -17,7 +17,7 @@
     <div id="signupbox" style="" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <div class="panel-title">Cadastro Usuário Externo</div>
+                <div class="panel-title">Cadastro Usuário Externo - Parte I</div>
             </div>
             <div class="panel-body">
                 <form id="sigupform" class="form-horizontal" data-toggle="validator" role="form" method="POST" action="../application/routes/routes.php">
@@ -31,15 +31,6 @@
                         <label for="nome" class="col-md-3 control-label">Nome:</label>
                         <div class="col-md-9">
                             <input required type="text" class="form-control" name="nome" placeholder="Digite seu nome completo" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email" class="col-md-3 control-label">Pais</label>
-                        <div class="col-md-9">
-                            <select required id="pais" name="pais" class="form-control">
-                                <option value=""></option>
-                            </select>
                         </div>
                     </div>
 
@@ -58,7 +49,17 @@
                         </div>
                     </div>
 
+
                     <div class="form-group">
+                        <label for="email" class="col-md-3 control-label">Pais</label>
+                        <div class="col-md-9">
+                            <select required id="pais" name="pais" class="form-control">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--<div class="form-group">
                         <label for="ocupacao" class="col-md-3 control-label">Ocupação</label>
                         <div class="col-md-9">
                             <input required type="text" class="form-control" name="ocupacao" placeholder="Digite sua ocupação" required>
@@ -104,7 +105,7 @@
                         <div class="col-md-9">
                             <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="Digite seu telefone fixo">
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="form-group">
                         <label for="email" class="col-md-3 control-label">Estado</label>
@@ -125,9 +126,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="cep" class="col-md-3 control-label">CEP</label>
+                        <label for="bairro" class="col-md-3 control-label">Bairro</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="cep" placeholder="Digite o email cadastrado" required>
+                            <input type="text" class="form-control" name="bairro" placeholder="Digite o nome do seu bairro" required>
                         </div>
                     </div>
 
@@ -153,13 +154,14 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="bairro" class="col-md-3 control-label">Bairro</label>
+                        <label for="cep" class="col-md-3 control-label">CEP</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="bairro" placeholder="Digite o número do logradouro" required>
+                            <input type="text" class="form-control" name="cep" placeholder="Digite o email cadastrado" required>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    
+                  <!--  <div class="form-group">
                         <label for="senha" class="col-md-3 control-label">Senha</label>
                         <div class="col-md-9">
                             <input required type="password" class="form-control" id="senha" name="senha" placeholder="Mínimo de 4 Caracteres" required
@@ -172,13 +174,13 @@
                         <div class="col-md-9">
                             <input type="password" class="form-control" name="confirmarSenha" placeholder="Repita a senha" required minlength="4" data-match="#senha">
                         </div>
-                    </div>
+                    </div>-->
 
 
                     <div class="form-group">
 
                         <div class="col-md-offset-3 col-md-9">
-                            <button id="btn-signup" name="cadUserExterno" type="submit" class="btn btn-primary"><i class="icon-hand-right"></i> Solicitar Cadastro</button>
+                            <button id="btn-signup" name="cadUserExterno" type="submit" class="btn btn-primary"><i class="icon-hand-right"></i> Segunda Etapa</button>
                         </div>
                     </div>
 
