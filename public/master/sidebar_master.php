@@ -4,6 +4,10 @@
                 <ul class="nav" id="main-menu">
 
                     <li class="active-link">
+                        <a href="../blank.php"><i class="fa fa-user"></i>Gestão de Administradores</a>
+                    </li>
+
+                    <li class="active-link">
                         <a href="gestaoSistema.php"><i class="fa fa-cog"></i>Gestão do Sistema</a>
                     </li>
 
@@ -16,7 +20,7 @@
                     </li>
 
                     <li class="active-link">
-                        <a href="auditoria.php">Auditoria</a>
+                        <a href="auditoria.php"><i class="fa fa-book"></i>Auditoria</a>
                     </li>
                 </ul>
             </div>
