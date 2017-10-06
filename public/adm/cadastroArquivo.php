@@ -4,16 +4,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EGDOC - Relatório de Utilização</title>
+  <title>EGDOC - Cadastro de Arquivo</title>
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
   <link href="../assets/css/custom.css" rel="stylesheet" />
-  <link href="../assets/css/jquery-ui-1.12.1.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />-->
+  <link href="../assets/css/quill.bubble.css" rel="stylesheet" />
+  <link href="../assets/css/quill.snow.css" rel="stylesheet" />
 </head>
 
 <body>
+
+<?php
+    require_once 'sidebar_adm.php';
+?>
 
 
 
@@ -27,8 +31,8 @@
           <span class="icon-bar"></span>
         </button>
           <a class="navbar-brand" href="../index.html">
-          <img src="../assets/img/logo.png" />
-        </a>
+            <img src="../assets/img/logo.png" />
+          </a>
         </div>
 
         <span class="logout-spn">
@@ -37,11 +41,13 @@
       </span>
       </div>
     </div>
+    
     <!-- /. NAV TOP  -->
     <!-- NAV SIDE  -->
-    <nav class="navbar-default navbar-side" role="navigation">
+<!--    <nav class="navbar-default navbar-side" role="navigation">
       <div class="sidebar-collapse">
         <ul class="nav" id="main-menu">
+
 
           <li class="active-link scrollMenu"><a aria-hidden="true" href="#">Cadastro</a></li>
           <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
@@ -64,7 +70,7 @@
           <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
             <ul style="margin-top:-50px;" class="nav">
               <li class="active-link">
-                <a href="movimentacaoProcesso.html">Consulta de Processos</a>
+                <a href="movimentacaoProcesso.html">Movimentação de Processos</a>
               </li>
 
               <li class="active-link">
@@ -102,97 +108,129 @@
         </ul>
       </div>
 
-    </nav>
+    </nav>-->
     <!-- /. NAV SIDE  -->
     <div id="page-wrapper">
       <div id="page-inner">
         <div class="row">
-          <div class="col-md-4">
-            <a class="navbar-brand" href="../index.html">
-           <img src="../assets/img/logo.png" />
-         </a>
-          </div>
-          <div class="col-md-4" style="padding-top:50px">
-            <h1>Razão Social</h1>
+          <div class="col-md-10">
+            <h2 class="text-primary text-center">Cadastro de Arquivo</h2>
           </div>
         </div>
 
-        <form data-toggle="validator" role="form">
-          <div class="row">
-            <div class="col-md-12">
-              <h3> Relatório de Utilização:</h3>
-            </div>
+        <hr />
+        <!-- Primero bloco -->
+        <!-- <form> -->
+        <form d="formArquivo">
+
+          <!-- <div class="form-group">
+          <label for="nomePasta">Nome da Pasta</label>
+          <input type="text" required class="form-control" id="nomePasta" size=63>
+        </div> -->
+          <div class="input-group">
+            <form>
+              <div class="input-group">
+                <div class="col-md-6">
+                  <label for="anexar">Nome da Pasta:</label>
+                  <input requierd type="text" class="form-control" id="pasta">
+                </div>
+                <div class="col-md-6">
+                  <label for="anexar">Anexar:</label>
+                  <input requierd type="file" class="form-control" id="anexar" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+text/plain, application/pdf">
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="col-md-8">
+                  <label for="anexar">Comentário Adicional:</label>
+                  <input type="text" class="form-control" id="anexar" maxlength="40">
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+            </form>
           </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <label for="periodoInicio">Data Inicial</label>
-              <input required id="datepicker" type="text" class="form-control" name="periodoInicio" id="periodoInicio">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <label for="periodoFim">Data Final</label>
-              <input required id="datepicker1" type="text" class="form-control" name="periodoFim" id="periodoFim">
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-4">
-              <label for="transacao">Transação:</label>
-              <input required placeholder="Transação" type="text" class="form-control" name="transacao" id="transacao">
-            </div>
-          </div>
-
-
-
-          <div class="row" style="padding-top:40px">
-            <div class="col-md-6">
-              <button class="btn btn-default" type="submit" id="relatório">Gerar Relatório</button>
-            </div>
-          </div>
         </form>
+
+        <br>
+        <br>
+
+
+        <div style="height:375px" id="editor">
+
+        </div>
+
+
+        <br>
+
+        <form class="form-inline">
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="reset" name="limpar">Limpar Dados</button>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="text" name="cancelar">Cancelar Cadastro</button>
+          </div>
+          <!-- </form> -->
+          <!-- Fim do Segundo Bloco -->
+
+          <!-- Terceiro Bloco -->
+          <!-- <form class="form-inline"> -->
+
+          <!-- Fim do Terceiro Bloco -->
+          <!--</form> -->
+
+        </form>
+        </form>
+
+
+
+
+
+        <!-- /. ROW  -->
       </div>
-
-      <!-- /. ROW  -->
-      <hr />
-
-      <!-- /. ROW  -->
+      <!-- /. PAGE INNER  -->
     </div>
-    <!-- /. PAGE INNER  -->
-  </div>
-  <!-- /. PAGE WRAPPER  -->
-  </div>
+    <!-- /. PAGE WRAPPER  -->
   </div>
   <div class="footer">
 
 
     <div class="row">
       <div class="col-lg-12">
-        &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+        &copy; 2017 egdoc.com | Design by:
+        <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
       </div>
     </div>
   </div>
 
 
+  <!-- /. WRAPPER  -->
+  <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+  <!-- JQUERY SCRIPTS -->
   <script src="../assets/js/lib/jquery-1.10.2.js"></script>
-  <script src="../assets/js/lib/jquery-ui-1.12.1.min.js"></script>
+  <!-- BOOTSTRAP SCRIPTS -->
+
+
   <script src="../assets/js/lib/bootstrap.min.js"></script>
+  <!-- CUSTOM SCRIPTS -->
+  <script src="../assets/js/cadastroCliente.js"></script>
+
+  <script src="../assets/js/cadastroArquivo.js"></script>
+
+  <script src="../assets/js/lib/quill.min.js"></script>
+
   <script src="../assets/js/custom.js"></script>
-  <script src="../assets/js/lib/validator.min.js"></script>
 
-  <script>
-        $.datepicker.setDefaults( $.datepicker.regional[ "pt" ] );
 
-        $(function () {
-            
-            $("#datepicker").datepicker();
 
-            $("#datepicker1").datepicker();
 
-        });
-    </script>
+
+
 
 
 </body>
