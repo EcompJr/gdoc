@@ -37,31 +37,14 @@
             </div>
         </div>
         <!-- /. NAV TOP  -->
+        
         <!-- NAV SIDE  -->
-        <nav class="navbar-default navbar-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
+        <?php
+            require_once 'sidebar_master.php';
+        ?>
+        <!-- NAV SIDE  -->
 
-                    <li class="active-link">
-                        <a href="gestaoSistema.html"><i class="fa fa-cog"></i>Gestão do Sistema</a>
-                    </li>
 
-                    <li class="active-link">
-                        <a href="gestaoEntidades.html"><i class="fa fa-cogs "></i>Gestão de Entidades</a>
-                    </li>
-
-                    <li class="active-link">
-                        <a href="masterUser.html"><i class="fa fa-star"></i>Usuário Master</a>
-                    </li>
-
-                    <li class="active-link">
-                        <a href="auditoria.html">Auditória</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-        <!-- /. NAV SIDE  -->
         <div id="page-wrapper">
             <div id="page-inner">
                 <div class="row">
