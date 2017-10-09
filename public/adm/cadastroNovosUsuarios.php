@@ -59,9 +59,9 @@
               <label for="tipoUsuario">Tipo de Usuário:</label>
               <select id="tipoUsuario" class="form-control">
                 <option value"Administrador" checked>Administrador</option>
-                <option value="Intermédiario">Intermediario</option>
+                <!--<option value="Intermédiario">Intermediario</option>-->
                 <option value="Interno">Interno</option>
-                <option value="Externo">Externo</option>
+                <!--<option value="Externo">Externo</option>-->
             </select>
             </div>
           </div>

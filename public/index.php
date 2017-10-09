@@ -82,7 +82,7 @@
                             <div class="col-md-12 control">
                                 <div class="login-footnotes">
                                     Esqueceu sua conta ?
-                                    <a href="recuperarSenha.html" id="recuperar">
+                                    <a href="recuperarSenha.php" id="recuperar">
                             Clique aqui.
                         </a>
                                 </div>

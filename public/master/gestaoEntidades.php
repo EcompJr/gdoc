@@ -33,7 +33,7 @@ a:hover{
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src="../assets/img/logo.png" />
                     </a>
                 </div>
@@ -66,7 +66,7 @@ a:hover{
                  <!-- /. ROW  -->
             <div class="row text-center pad-top">
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-            <a href="cadastroClientes.html" >
+            <a href="cadastroClientes.php" >
              <div class="div-square">
              <i class="fa fa-plus fa-5x"></i>
              <h4>Adicionar</h4>
@@ -77,7 +77,7 @@ a:hover{
              </div>
 
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-             <a href="cadastroClientes.html" >
+             <a href="cadastroClientes.php" >
              <div class="div-square">
              <i class="fa fa-pencil fa-5x"></i>
              <h4>Editar</h4>
@@ -87,7 +87,7 @@ a:hover{
 
              </div>
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-             <a href="blank.html" >
+             <a href="blank.php" >
              <div class="div-square">
              <i class="fa fa-minus fa-5x"></i>
              <h4>Excluir</h4>
@@ -96,7 +96,7 @@ a:hover{
 
              </div>
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-             <a href="blank.html" >
+             <a href="blank.php" >
              <div class="div-square">
              <i class="fa fa-print fa-5x"></i>
              <h4>Imprimir</h4>
@@ -106,7 +106,7 @@ a:hover{
 
              </div>
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-             <a href="blank.html" >
+             <a href="blank.php" >
              <div class="div-square">
              <i class="fa fa-share fa-5x"></i>
              <h4>Exportar</h4>

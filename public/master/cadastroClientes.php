@@ -98,6 +98,13 @@
               <select id="cidades" class="form-control" required>
               </select>
             </div>
+
+            <div class="form-group col-md-3">
+              <label for="nivelHierarquico">Nível Hierárquico</label>
+              <select id="hierarquia" class="form-control" required>
+              </select>
+            </div>
+
           </div>
 
           <div class="row">
