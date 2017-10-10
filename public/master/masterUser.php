@@ -67,7 +67,7 @@ a:hover{
 
             <div class="row text-center pad-top">
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-         <a href="../adm/cadastroUsuarioMaster.php" >
+         <a href="cadastroUsuarioMaster.php" >
         <div class="div-square">
              <i class="fa fa-plus fa-5x"></i>
              <h4>Adicionar</h4>
