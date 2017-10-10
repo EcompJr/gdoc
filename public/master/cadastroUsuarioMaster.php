@@ -14,7 +14,7 @@
 <body>
 
 <?php
-    require_once 'sidebar_adm.php';
+    require_once 'sidebar_master.php';
 ?>
 
   <div id="wrapper">
