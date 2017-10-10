@@ -68,12 +68,12 @@
             </div>
 
             <div class="form-group col-md-3">
-              <label for="ie">I.E.</label>
+              <label for="ie">Inscrição Estadual</label>
               <input type="text" required class="form-control" id="ie">
             </div>
 
             <div class="form-group col-md-3">
-              <label for="im">I.M.</label>
+              <label for="im">Inscrição Municipal</label>
               <input type="text" required class="form-control" id="im">
             </div>
           </div>
