@@ -66,8 +66,9 @@ body {
 font-weight: 900;
 font-size: 16px;
 }
+/*1px*/
 .sidebar-collapse > .nav > li {
-	border-bottom:1px solid #e1e1e1;
+	border-bottom: 0 solid #e1e1e1;
 }
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
@@ -214,3 +215,20 @@ min-height: 80px;
 
 
 }
+/*NAVBAR - DIFERENCIACAO DOS MENUS*/
+#menuId {
+    border: solid #3596e0;
+    border-width: 0 5px 0 5px;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+#subMenuId:hover {
+    background-color: #214761;
+    border-bottom-color: #214761;
+    border-radius: 5px;
+    color: white;
+    
+}
+
