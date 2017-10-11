@@ -18,6 +18,9 @@
                 <li class="active-link">
                   <a id="subMenuId" href="cadastroInstrumento.php">Cadastro de Instrumentos</a>
                 </li>
+                <li class="active-link">
+                  <a id="subMenuId" href="inclusaoProcesso.php">Cadastro de Processos</a>
+                </li>
               </ul>
             </div>
   
