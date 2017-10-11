@@ -22,36 +22,19 @@ a:hover{
 
 <body>
 
-
+      <!-- NAVBAR -->
+      <?php
+        require_once 'navbar_master.php';
+      ?>
+      <!-- /. NAVBAR -->
+      
+      <!-- NAV SIDE  -->
+      <?php
+          require_once 'sidebar_master.php';
+      ?>
+      <!-- NAV SIDE  -->
 
     <div id="wrapper">
-         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="adjust-nav">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../index.php">
-                        <img src="../assets/img/logo.png" />
-                    </a>
-                </div>
-
-                 <span class="logout-spn" >
-                  <a href="#" style="color:#fff;">Sair</a>
-
-                </span>
-            </div>
-        </div>
-        <!-- /. NAV TOP  -->
-       
-       <!-- NAV SIDE  -->
-       <?php
-            require_once 'sidebar_master.php';
-        ?>
-        <!-- NAV SIDE  -->
-
         <div id="page-wrapper" >
             <div id="page-inner">
                 <div class="row">
@@ -78,7 +61,7 @@ a:hover{
         </div>
 
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <a href="cadastroClientes.php" >
+        <a href="editarUsuarioMaster.php" >
         <div class="div-square">
 
              <i class="fa fa-pencil fa-5x"></i>
