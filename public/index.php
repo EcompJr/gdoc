@@ -49,7 +49,7 @@
                         <div class="input-group">
                             <div class="checkbox">
                                 <label>
-                              <input id="login-remember" type="checkbox" name="remember" value="1" data-validate="false"> Lembrar
+                              <input id="login-remember" type="checkbox" name="remember" value="1" data-validate="false"> Lembrar suas credenciais
                           </label>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                         <div class="form-group">
                             <div class="col-md-12 control">
                                 <div class="login-footnotes">
-                                    Não Possui Cadastro ?
+                                    Não Possui Cadastro?
                                     <a href="cadastroUsuarioExterno.php" id="cadastrar">
                             Clique aqui.
                         </a>
@@ -81,7 +81,7 @@
                         <div class="form-group">
                             <div class="col-md-12 control">
                                 <div class="login-footnotes">
-                                    Esqueceu sua conta ?
+                                    Esqueceu Sua Senha?
                                     <a href="recuperarSenha.php" id="recuperar">
                             Clique aqui.
                         </a>
