@@ -63,7 +63,7 @@
           <div class="row">
 
             <div class="form-group col-md-3">
-              <label for="cep">C.E.P</label>
+              <label for="cep">CEP</label>
               <input id="cep" placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" >
             </div>
 
@@ -91,8 +91,8 @@
 
           <div class="row">
             <div class="form-group col-md-3">
-              <label for="tel">Tel.</label>
-              <input type="tel" required class="form-control" id="tel1" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+              <label for="Telefone">Telefone</label>
+              <input type="Telefone" required class="form-control" id="Telefone1" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
             </div>
 
             <div class="form-group col-md-3">
@@ -102,12 +102,12 @@
 
             <div class="form-group col-md-3">
             <label for="bairro">Bairro</label>
-            <input placeholder="Bairro" required type="text" class="form-control" id="bairro">
+            <input required type="text" class="form-control" id="bairro">
           </div>
 
             <div class="form-group col-md-3">
               <label for="complemento">Complemento</label>
-              <input placeholder="Edíficio número 2" type="text" class="form-control" id="complemento">
+              <input type="text" class="form-control" id="complemento">
             </div>
           </div>
 
@@ -121,8 +121,8 @@
             <input type="text" required class="form-control" id="nome1">
           </div>
           <div class="form-group col-md-3">
-            <label for="exampleInputName2">Tel</label>
-            <input required class="form-control" id="tel2" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+            <label for="exampleInputName2">Telefone</label>
+            <input required class="form-control" id="Telefone2" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
           </div>
 
           <div class="form-group col-md-3">
@@ -146,8 +146,8 @@
             <input type="text" required class="form-control" id="nome2">
           </div>
           <div class="form-group col-md-3">
-            <label for="tel3">Tel</label>
-            <input type="text" required class="form-control" id="tel3" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+            <label for="Telefone3">Telefone</label>
+            <input type="text" required class="form-control" id="Telefone3" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
           </div>
 
           <div class="form-group col-md-3">
@@ -171,8 +171,8 @@
             <input type="text" required class="form-control" id="nome3" size=52>
           </div>
           <div class="form-group col-md-3">
-            <label for="exampleInputName2">Tel</label>
-            <input type="text" required="true" class="form-control" id="tel4" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$"
+            <label for="exampleInputName2">Telefone</label>
+            <input type="text" required="true" class="form-control" id="Telefone4" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$"
               size=13>
           </div>
 
@@ -198,35 +198,31 @@
             <label for="dataRecisao">Data de Recisão</label>
             <input type="date" required class="form-control" id="dataRecisao">
           </div>
-          </div>
-
-          <div class="row">
           <div class="form-group col-md-4">
             <label for="valorMensal">Valor Mensal</label>
             <input type="number" required class="form-control" id="valorMensal">
           </div>
+          </div>
+
+          <div class="row">
+
 
           <div class="form-group col-md-4">
             <label for="codigoControle">Código de Controle</label>
             <input type="text" required class="form-control" id="codigoControle">
           </div>
-          </div>
-
-          <div class="row">
           <div class="form-group col-md-4">
             <label for="logo">Anexar Logo:</label>
             <input requierd type="file" class="form-control" id="logo">
           </div>
-
           <div class="form-group col-md-4">
-            <label for="obs">Obs</label>
-            <textarea placeholder="Escreva aqui sua observação" id="obs" rows="5" cols="50">
-      </textarea>
+            <label for="obs">Observações</label>
+            <textarea placeholder="Escreva aqui sua observação" id="obs" rows="5" cols="40"></textarea>
           </div>
           </div>
 
           <div class="form-group">
-            <button class="btn btn-primary" type="submit" name="salvar">Salvar</button>
+            <button style="float: right" class="btn btn-primary" type="submit" name="salvar">Salvar</button>
           </div>
 
         </form>
