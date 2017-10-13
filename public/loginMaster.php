@@ -59,7 +59,7 @@
                         <div class="input-group">
                           <div class="checkbox">
                             <label>
-                              <input id="login-remember" type="checkbox" name="remember" value="1" data-validate="false"> Lembrar
+                              <input id="login-remember" type="checkbox" name="remember" value="1" data-validate="false"> Lembrar suas credenciais
                           </label>
                       </div>
                   </div>
