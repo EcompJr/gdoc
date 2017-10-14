@@ -29,47 +29,27 @@ require_once 'navbar_adm.php';
     <div id="page-wrapper">
       <div id="page-inner">
         <div class="row">
-          <div class="col-md-4">
-            <a class="navbar-brand" href="../index.html">
-           <img src="../assets/img/logo.png" />
-         </a>
-          </div>
-          <div class="col-md-4" style="padding-top:50px">
-            <h1>Razão Social</h1>
+          <div class="col-md-10">
+              <h2 class="text-primary text-center">Relatório de Utilização</h2>
           </div>
         </div>
 
         <form data-toggle="validator" role="form">
           <div class="row">
-            <div class="col-md-12">
-              <h3> Relatório de Utilização:</h3>
-            </div>
-          </div>
-
-          <div class="row">
             <div class="col-md-4">
               <label for="periodoInicio">Data Inicial</label>
               <input required id="datepicker" type="text" class="form-control" name="periodoInicio" id="periodoInicio">
             </div>
-          </div>
-          <div class="row">
             <div class="col-md-4">
               <label for="periodoFim">Data Final</label>
               <input required id="datepicker1" type="text" class="form-control" name="periodoFim" id="periodoFim">
             </div>
-          </div>
-
-
-          <div class="row">
             <div class="col-md-4">
-              <label for="transacao">Transação:</label>
-              <input required placeholder="Transação" type="text" class="form-control" name="transacao" id="transacao">
+              <label for="transacao">Transação</label>
+              <input required type="text" class="form-control" name="transacao" id="transacao">
             </div>
           </div>
-
-
-
-          <div class="row" style="padding-top:40px">
+          <div style="float: right;margin-top: 3%;" class="row" style="padding-top:40px">
             <div class="col-md-6">
               <button class="btn btn-default" type="submit" id="relatório">Gerar Relatório</button>
             </div>
@@ -92,7 +72,7 @@ require_once 'navbar_adm.php';
 
     <div class="row">
       <div class="col-lg-12">
-        &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+        &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
       </div>
     </div>
   </div>
