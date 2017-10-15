@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EGDOC - Movimentação de Processos</title>
+    <title>EGDOC - Consulta de Processos</title>
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
     <link href="../assets/css/custom.css" rel="stylesheet" />
@@ -31,7 +31,7 @@ require_once 'navbar_adm.php';
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-10">
-                        <h2 class="text-primary text-center">Movimentação de Processos</h2>
+                        <h2 class="text-primary text-center">Consulta de Processos</h2>
                     </div>
                 </div>
 

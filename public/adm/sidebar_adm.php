@@ -28,7 +28,7 @@
             <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
               <ul style="margin-top:-50px;" class="nav">
                 <li class="active-link">
-                  <a id="subMenuId" href="movimentacaoProcesso.php">Movimentação de Processos</a>
+                  <a id="subMenuId" href="consultaProcesso.php">Consulta de Processos</a>
                 </li>
   
                 <li class="active-link">

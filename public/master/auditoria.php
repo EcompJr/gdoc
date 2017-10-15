@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EGDOC - Relatório de Acesso</title>
+    <title>EGDOC - Auditoria</title>
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/font-awesome.css" rel="stylesheet" />
     <link href="../assets/css/custom.css" rel="stylesheet" />
@@ -28,62 +28,43 @@
     <div id="wrapper">
         <div id="page-wrapper">
             <div id="page-inner">
-                <div class="row">
-                    <div class="col-md-4">
-                        <a class="navbar-brand" href="../index.html">
-                           <img src="../assets/img/logo.png" />
-                       </a>
-                    </div>
-                    <div class="col-md-4" style="padding-top:50px">
-                        <h2>Razão Social</h2>
-                    </div>
+            <div class="row">
+            <div class="col-md-10">
+                <h2 class="text-primary text-center">Auditoria</h2>
+            </div>
+          </div>
+  
+          <form data-toggle="validator" role="form">
+            <div class="row">
+              <div class="col-md-4">
+                <label for="periodoInicio">Data Inicial</label>
+                <input required id="datepicker" type="date" class="form-control" name="periodoInicio" id="periodoInicio">
+              </div>
+              <div class="col-md-4">
+                <label for="periodoFim">Data Final</label>
+                <input required id="datepicker1" type="date" class="form-control" name="periodoFim" id="periodoFim">
+              </div>
+              <div class="col-md-4">
+                <label for="transacao">Transação</label>
+                <input required type="text" class="form-control" name="transacao" id="transacao">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="usuario">Usuário</label>
+                    <select required class="form-control" name="usuario" id="usuario">
+                                <option value="">Selecione um usuário</option>
+                                <option value="exemplo1">Exemplo 1</option>
+                    </select>
                 </div>
-
-                <form data-toggle="validator" role="form">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3> Relatório de Acesso:</h3>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="exampleInputName2">Data Inicial</label>
-                            <input required name="datepicker" type="text" class="form-control" id="periodoInicio">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="exampleInputEmail2">Data Final</label>
-                            <input required name="datepicker1" type="text" class="form-control" id="periodoFim">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="usuario">Usuário:</label>
-                            <select required class="form-control" name="usuario" id="usuario">
-                                        <option value="">Selecione um usuário</option>
-                                        <option value="exemplo1">Exemplo 1</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="transacao">Transação:</label>
-                            <input required placeholder="Transação" type="text" class="form-control" id="transacao">
-                        </div>
-                    </div>
-
-                    <div class="row" style="padding-top:40px">
-                        <div class="col-md-2">
-                            <button class="btn btn-default" type="submit" id="auditoria">Auditar</button>
-                        </div>
-                    </div>
-                </form>
-
-
+            </div>
+            <div style="float: right;margin-top: 3%;" class="row" style="padding-top:40px">
+              <div class="col-md-6">
+                <button class="btn btn-default" type="submit" id="relatório">Auditar</button>
+              </div>
+            </div>
+          </form>
+        </div>
 
 
 

@@ -149,7 +149,7 @@
               <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
             </div>
             <div style="float: left" class="form-group">
-              <button class="btn" type="text" name="cancelar">Cancelar Cadastro</button>
+              <button class="btn btn-danger" type="text" name="cancelar">Remover Arquivo</button>
             </div>
             <!-- </form> -->
             <!-- Fim do Segundo Bloco -->
