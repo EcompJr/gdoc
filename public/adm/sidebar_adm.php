@@ -47,7 +47,7 @@
                   <a id="subMenuId" href="cadastroArquivo.php">Cadastro de Arquivo</a>
                 </li>
                 <li class="active-link">
-                  <a id="subMenuId" href="manutencaoArquivo.php">Abertura de Arquivo</a>
+                  <a id="subMenuId" href="aberturaArquivo.php">Abertura de Arquivo</a>
                 </li>
               </ul>
             </div>

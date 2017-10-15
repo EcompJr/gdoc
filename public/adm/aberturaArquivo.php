@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EGDOC - Cadastro de Arquivo</title>
+  <title>EGDOC - Abertura de Arquivo</title>
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
   <link href="../assets/css/custom.css" rel="stylesheet" />
@@ -98,74 +98,75 @@
         <div id="page-inner">
           <div class="row">
             <div class="col-md-10">
-              <h2 class="text-primary text-center">Cadastro de Arquivo</h2>
+              <h2 class="text-primary text-center">Abertura de Arquivo</h2>
             </div>
           </div>
 
           <hr />
+
           <!-- Primero bloco -->
           <!-- <form> -->
           <form d="formArquivo">
-
             <!-- <div class="form-group">
             <label for="nomePasta">Nome da Pasta</label>
             <input type="text" required class="form-control" id="nomePasta" size=63>
           </div> -->
             <div class="input-group">
-              <form>
                 <div class="input-group">
                   <div class="col-md-6">
                     <label for="anexar">Nome da Pasta</label>
                     <input requierd type="text" class="form-control" id="pasta">
                   </div>
                   <div class="col-md-6">
-                    <label for="anexar">Anexar</label>
-                    <input requierd type="file" class="form-control" id="anexar" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
-  text/plain, application/pdf">
+                    <label for="anexar">Data de Cadastro</label>
+                    <input type="date" class="form-control" id="data" maxlength="40">
                   </div>
-                  <div class="col-md-6">
-                    <label for="anexar">Comentário Adicional</label>
-                    <input type="text" class="form-control" id="anexar" maxlength="40">
+                  <div style="padding-top: 2%" class="col-md-6">
+                    <label for="documento">Tipo de Documento</label>
+                    <select>
+                        <option>*DOCX</option>
+                        <option>*DOC</option>
+                        <option>*PDF</option>
+                        <option>*ODF</option>
+                        <option>*TXT</option>
+                    </select>
                   </div>
                 </div>
-              </form>
             </div>
-
+            <button style="float: right" type="submit" class="btn btn-primary" role="search">Pesquisar</button>
           </form>
 
-          <br>
-          <br>
-
-
-          <div style="height:375px" id="editor">
-
+          <div style="padding-right: 35%;padding-top: 10%" class="row">
+            <div class="col-md-8 col-lg-8 col-md-offset-4">
+              <table class="table table-responsive table-striped table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Data</th>
+                    <th>Ato </th>
+                    <th>Instrumento</th>
+                    <th>Origem </th>
+                    <th>Destino</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>XX/XX/XXXX</td>
+                    <td> Lorem Ipsum</td>
+                    <td> Lorem Ipsum</td>
+                    <td> Lorem Ipsum</td>
+                    <td> Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>XX/XX/XXXX</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Ipsum Lorem</td>
+                    <td> Lorem Ipsum</td>
+                    <td> Lorem Ipsum</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-
-
-          <br>
-
-          <form class="form-inline">
-            <div style="float: right" class="form-group">
-              <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
-            </div>
-            <div style="float: left" class="form-group">
-              <button class="btn" type="text" name="cancelar">Cancelar Cadastro</button>
-            </div>
-            <!-- </form> -->
-            <!-- Fim do Segundo Bloco -->
-
-            <!-- Terceiro Bloco -->
-            <!-- <form class="form-inline"> -->
-
-            <!-- Fim do Terceiro Bloco -->
-            <!--</form> -->
-
-          </form>
-          </form>
-
-
-
-
 
           <!-- /. ROW  -->
         </div>

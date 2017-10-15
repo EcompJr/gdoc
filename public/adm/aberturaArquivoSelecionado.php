@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EGDOC - Cadastro de Arquivo</title>
+  <title>EGDOC - Abertura de Arquivo</title>
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
   <link href="../assets/css/custom.css" rel="stylesheet" />
@@ -98,7 +98,7 @@
         <div id="page-inner">
           <div class="row">
             <div class="col-md-10">
-              <h2 class="text-primary text-center">Cadastro de Arquivo</h2>
+              <h2 class="text-primary text-center">Abertura de Arquivo</h2>
             </div>
           </div>
 
