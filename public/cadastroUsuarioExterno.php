@@ -17,7 +17,7 @@
     <div id="signupbox" style="" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <div class="panel-title">Cadastro Usuário Externo - Parte I</div>
+                <div class="panel-title">Cadastro de Usuário Externo - Parte I</div>
             </div>
             <div class="panel-body">
 
@@ -87,10 +87,12 @@
                     <div class="form-group">
                         <label for="empresa" class="col-md-3 control-label">Empresa</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa que você trabalha" required>
+                            <select required id="empresa" name="empresa" class="form-control">
+                                <option value="empresa1">Empresa 1</option>
+                                <option value="empresa2">Empresa 2</option>
+                            </select>
                         </div>
                     </div>
-
 
                     <div class="form-group">
                         <label for="ocupacao" class="col-md-3 control-label">Ocupação</label>

@@ -17,7 +17,7 @@
     <div id="signupbox" style="" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <div class="panel-title">Cadastro Usuário Externo - Parte II</div>
+                <div class="panel-title">Cadastro de Usuário Externo - Parte II</div>
             </div>
             <div class="panel-body">
                 <form id="sigupform" class="form-horizontal" data-toggle="validator" role="form" method="POST" action="../application/routes/routes.php">
