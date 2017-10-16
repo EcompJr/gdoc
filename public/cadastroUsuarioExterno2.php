@@ -29,55 +29,68 @@
 
                     
                     <div class="form-group">
-                        <label for="civil" class="col-md-3 control-label">Estado Civil</label>
-                        <div class="col-md-9">
-                            <select required id="civil" name="estCivil" class="form-control">
-                                <option value="solteiro">Solteiro</option>
-                                <option value="casado">Casado</option>
-                                <option value="divorciado">Divorciado</option>
-                                <option value="viuvo">Viúvo</option>
-                                <option value="viuvo">União Estável</option>
-                            </select>
-                        </div>
+                    <label for="email" class="col-md-3 control-label">Pais</label>
+                    <div class="col-md-9">
+                        <select required id="pais" name="pais" class="form-control">
+                            <option value=""></option>
+                        </select>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="telefone" class="col-md-3 control-label">Telefone</label>
-                        <div class="col-md-9">
-                            <input type="tel" class="form-control" name="telefone" placeholder="(XX) XXXXX-XXXX" >
-                        </div>
+                <div class="form-group">
+                    <label for="email" class="col-md-3 control-label">Estado</label>
+                    <div class="col-md-9">
+                        <select required id="estados" name="estado" class="form-control">
+                            <option value=""></option>
+                        </select>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="celular" class="col-md-3 control-label">Celular</label>
-                        <div class="col-md-9">
-                            <input type="tel" class="form-control" id="celular" name="celular" placeholder="Digite seu telefone fixo">
-                        </div>
+                <div class="form-group">
+                    <label for="email" class="col-md-3 control-label">Cidade</label>
+                    <div class="col-md-9">
+                        <select required id="cidades" name="cidade" class="form-control">
+                            <option value=""></option>
+                        </select>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="whatsapp" class="col-md-3 control-label">WhatsApp</label>
-                        <div class="col-md-9">
-                            <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="Digite seu telefone fixo">
-                        </div>
+                <div class="form-group">
+                    <label for="bairro" class="col-md-3 control-label">Bairro</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="bairro" placeholder="Digite o nome do seu bairro" required>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="empresa" class="col-md-3 control-label">Empresa</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa que você trabalha" required>
-                        </div>
+                <div class="form-group">
+                    <label for="logradouro" class="col-md-3 control-label">Logradouro</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="logradouro" placeholder="Digite seu endereço" required>
                     </div>
+                </div>
 
-
-                    <div class="form-group">
-                        <label for="ocupacao" class="col-md-3 control-label">Ocupação</label>
-                        <div class="col-md-9">
-                            <input required type="text" class="form-control" name="ocupacao" placeholder="Digite sua ocupação" required>
-                        </div>
+                <div class="form-group">
+                    <label for="email" class="col-md-3 control-label">Número</label>
+                    <div class="col-md-9">
+                        <input type="number" class="form-control" name="numero" placeholder="Digite o número do logradouro" required>
                     </div>
+                </div>
 
-                    <div class="form-group">
+                <div class="form-group">
+                    <label for="complemento" class="col-md-3 control-label">Complemento</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="complemento" placeholder="Digite o Complemento (Opcional)">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cep" class="col-md-3 control-label">CEP</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="cep" placeholder="Digite o email cadastrado" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
                         <label for="senha" class="col-md-3 control-label">Senha</label>
                         <div class="col-md-9">
                             <input required type="password" class="form-control" id="senha" name="senha" placeholder="Mínimo de 4 Caracteres" required
@@ -92,15 +105,13 @@
                         </div>
                     </div>
 
-
                     <div class="form-group">
 
-                        <div class="col-md-offset-3 col-md-9">
-                            <button id="btn-signup" name="cadUserExterno" type="submit" class="btn btn-primary"><i class="icon-hand-right"></i> Finalizar</button>
-                        </div>
+                    <div class="col-md-offset-3 col-md-9">
+                        <button id="btn-signup" name="cadUserExterno" type="submit" class="btn btn-primary pull-right">Próximo</button>
                     </div>
-
-                    
+                </div>
+                
                 </form>
             </div>
         </div>
