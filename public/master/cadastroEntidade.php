@@ -113,79 +113,30 @@
 
           <!--<br>-->
           <!--Antes era: Dados responsável-->
-          <h3 class="text-primary"> Responsável: </h3>
 
           <div class="row">
-          <div class="form-group col-md-3">
-            <label for="exampleInputName2">Nome</label>
-            <input type="text" required class="form-control" id="nome1">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="exampleInputName2">Telefone</label>
-            <input required class="form-control" id="Telefone2" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="email1">Email</label>
-            <input type="email" required class="form-control" id="email1"6>
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="outros1">Outros</label>
-            <input type="email" required class="form-control" id="outros1">
-          </div>
-          </div>
-
-         <!--<br>-->
-        <!--Antes era: Dados operacional-->          
-          <h3 class="text-primary"> Operacional: </h3>
-
-          <div class="row">
-          <div class="form-group col-md-3">
-            <label for="nome2">Nome</label>
-            <input type="text" required class="form-control" id="nome2">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="Telefone3">Telefone</label>
-            <input type="text" required class="form-control" id="Telefone3" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="email2">Email</label>
-            <input type="email" required class="form-control" id="email2">
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="outros2">Outros</label>
-            <input type="email" required="true" class="form-control" id="outros2">
-          </div>
+            <div class="form-group col-md-6">
+            <h3 class="text-primary"> Responsável </h3>
+                <select id="responsavel" class="form-control" required>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+            <h3 class="text-primary"> Operacional </h3>
+                <select id="operacional" class="form-control" required>
+                </select>
+            </div>
           </div>
 
           <!--<br>-->
           <!--Antes era: Dados financeiro-->
-          <h3 class="text-primary"> Financeiro: </h3>
+          <h3 class="text-primary"> Financeiro </h3>
 
           <div class="row">
-          <div class="form-group col-md-3">
-            <label for="nome3">Nome</label>
-            <input type="text" required class="form-control" id="nome3" size=52>
-          </div>
-          <div class="form-group col-md-3">
-            <label for="exampleInputName2">Telefone</label>
-            <input type="text" required="true" class="form-control" id="Telefone4" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$"
-              size=13>
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="email3">Email</label>
-            <input type="email" required class="form-control" id="email3" size=76>
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="outros3">Outros</label>
-            <input type="email" required class="form-control" id="outros3" size=75>
-          </div>
-          </div>
+            <div class="form-group col-md-12">
+            <label for="responsavelFinanceiro">Responsável</label>
+              <select id="financeiro" class="form-control" required></select>
+            </div>
+            </div>
 
           <!--<br>-->
 
