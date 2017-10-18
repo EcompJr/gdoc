@@ -57,9 +57,6 @@
             </li>
   
             <li id="menuId" class="active-link">
-              <a href="#">Trocar senha</a>
-            </li>
-            <li id="menuId" class="active-link">
               <a href="atualizacaoDados.php"> <i class="glyphicon glyphicon-edit"></i> Atualização de Dados</a>
             </li>
   
