@@ -43,68 +43,48 @@ a:hover{
                     </div>
                 </div>
                  <!-- /. ROW  -->
-                  <hr />
+                  <hr>
 
                  <!-- /. ROW  -->
 
 
-            <div class="row text-center pad-top">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-         <a href="cadastroUsuarioMaster.php" >
-        <div class="div-square">
-             <i class="fa fa-plus fa-5x"></i>
-             <h4>Adicionar</h4>
-
-        </div>
-       </a>
-
+      <div class="row text-center pad-top">
+        <div class="col-lg-offset-2 col-lg-2 col-md-2 col-sm-2 col-xs-6">
+          <a href="cadastroUsuarioMaster.php" >
+            <div class="div-square">
+              <i class="fa fa-plus fa-5x"></i>
+              <h4>Adicionar</h4>
+            </div>
+          </a>
         </div>
 
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <a href="editarUsuarioMaster.php" >
-        <div class="div-square">
-
-             <i class="fa fa-pencil fa-5x"></i>
-             <h4>Editar</h4>
-
-        </div>
-        </a>
+          <a href="editarUsuarioMaster.php" >
+            <div class="div-square">
+              <i class="fa fa-pencil fa-5x"></i>
+              <h4>Editar</h4>
+            </div>
+          </a>
         </div>
 
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-        <a href="../blank.php" >
-        <div class="div-square">
-
-              <i class="fa fa-minus fa-5x"></i>
-              <h4>Excluir</h4>
-        </div>
-        </a>
-
-
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-          <a href="../blank.php" >
-        <div class="div-square">
-
+          <a href="../blank.php">
+            <div class="div-square">
               <i class="fa fa-print fa-5x"></i>
               <h4>Imprimir</h4>
-
+            </div>
+          </a> 
         </div>
-        </a>
 
-
-        </div>
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
           <a href="../blank.php" >
-        <div class="div-square">
+            <div class="div-square">
               <i class="fa fa-share fa-5x"></i>
               <h4>Exportar</h4>
-
+            </div>
+          </a>
         </div>
-        </a>
-
-        </div>
-        </div>
+      </div>
 
 <br>
         <!-- Grid da pagina  -->
