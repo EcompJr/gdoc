@@ -81,8 +81,7 @@ require_once 'navbar_adm.php';
                             <div class="input-group">
                                 <div class="col-md-4">
                                     <label for="anexar">Anexar</label>
-                                    <input type="file" id="anexar" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
-text/plain, application/pdf">
+                                    <input type="file" id="anexar" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf">
                                 </div>
                             </div>
                         </form>
@@ -96,13 +95,13 @@ text/plain, application/pdf">
                     <br>
 
                     <form class="form-inline">
-                        <div class="form-group">
+                        <div class="form-group col-md-2">
                             <button class="btn btn-primary" type="submit" name="salvar" disabled>Gravar Dados</button>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-md-2">
                             <button class="btn btn-primary" type="reset" name="limpar">Limpar Dados</button>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-md-2">
                             <button class="btn btn-primary" type="text" name="cancelar">Cancelar Cadastro</button>
                         </div>
                     </form>
