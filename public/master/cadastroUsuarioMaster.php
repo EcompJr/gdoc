@@ -51,78 +51,77 @@
           <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
 
             <div class="row">
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-4">
                 <label for="empresa">Razão Social</label>
                 <input type="text" class="form-control" placeholder="Empresa Exemplo" readonly>
               </div>
 
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-4">
                 <label for="empresa">Código de Controle da Empresa</label>
                 <input type="number" class="form-control" placeholder="142123" readonly>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-4">
                 <label for="controle">Código de Controle do Usuário</label>
                 <input type="text" class="form-control" id="controle" placeholder="Código Automático" readonly>
               </div>
-
-              <div class="form-group col-md-3">
-                <label> Situação: </label>
-                <br>
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-primary active">
-                        <input type="radio" name="options" id="option1" checked=""> Ativo
-                      </label>
-                  <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option2"> Inativo
-                      </label>
-                </div>
-              </div>
             </div>
 
             <div class="row">
-              <div class="form-group col-md-3">
+              
+              <div class="form-group col-md-4">
                 <label for="nome">Nome:</label>
                 <input required type="text" class="form-control" id="nome" placeholder="Nome Completo">
               </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-4">
                 <label for="email">Email:</label>
                 <input required type="email" class="form-control" id="email" placeholder="Email">
               </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group col-md-3">
-                <label for="telefone">Tel:</label>
-                <input required type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
-              </div>
-
-              <div class="form-group col-md-3">
-                <label for="nome">CPF</label>
-                <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
-                  required type="text" class="form-control" id="nome" placeholder="Nome">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-4">
                 <label for="passwd">Senha:</label>
                 <input required type="password" class="form-control" id="passwd" placeholder="Minimo de 4 caracteres" minlength="4">
               </div>
             </div>
 
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="telefone">Telefone:</label>
+                <input required type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="nome">CPF:</label>
+                <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
+                  required type="text" class="form-control" id="nome" placeholder="Nome">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="passwd">Confirmar senha:</label>
+                <input required type="password" class="form-control" id="passwd" placeholder="Confirmar senha" minlength="4">
+              </div>
+              
+            </div>
+
+            <div class="row">
+              <div class="form-group col-md-4">
+                  <label> Situação: </label>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked=""> Ativo
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option2"> Inativo
+                    </label>
+                  </div>
+                </div>
+            </div>
+
             <br>
 
             <div class="row">
-              <div class="form-group col-md-2">
+              <div class="form-group col-md-offset-2 col-md-4">
                 <button type="submit" class="btn btn-primary">Salvar</button>
               </div>
-              <div class="form-group col-md-2">
+              <div class="form-group col-md-offset-2 col-md-4">
                 <button type="reset" class="btn btn-primary">Resetar</button>
               </div>
             </div>
