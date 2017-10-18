@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
@@ -34,14 +34,16 @@ a:hover{
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Usuário Master <i class="fa fa-star"></i></h2>
+                     <h2>Gestão de Administradores <i class="fa fa-user"></i></h2>
                     </div>
                 </div>
+                 <!-- /. ROW  -->
       <hr>
+                 <!-- /. ROW  -->
 
       <div class="row text-center pad-top">
         <div class="col-lg-offset-2 col-lg-2 col-md-2 col-sm-2 col-xs-6">
-          <a href="cadastroUsuarioMaster.php" >
+          <a href="cadastroUsuarioAdm.php" >
             <div class="div-square">
               <i class="fa fa-plus fa-5x"></i>
               <h4>Adicionar</h4>
@@ -50,7 +52,7 @@ a:hover{
         </div>
 
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-          <a href="editarUsuarioMaster.php" >
+          <a href="editarUsuarioAdm.php" >
             <div class="div-square">
               <i class="fa fa-pencil fa-5x"></i>
               <h4>Editar</h4>
