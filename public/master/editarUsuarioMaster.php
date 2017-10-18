@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EGDOC - Editar de Usuário Master</title>
+  <title>EGDOC - Edição de Usuário Master</title>
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
   <link href="../assets/css/custom.css" rel="stylesheet" />
@@ -13,136 +13,148 @@
 
 <body>
 
-<?php
-    require_once 'sidebar_master.php';
-?>
-<!-- NAVBAR -->
-<?php
-    require_once 'navbar_master.php';
-?>
-    <!-- /. NAV TOP  -->
-    
-  <div id="wrapper">
-    <div id="page-wrapper">
-      <div id="page-inner">
-
-        <div class="row">
-          <div class="col-md-4">
-            <a class="navbar-brand" href="../index.html">
-           <img src="../assets/img/logo.png" />
-         </a>
-          </div>
-          <div class="col-md-4">
-
-            <br>
-            <br>
-          </div>
-
-        </div>
-        <div class="row">
-          <div class="col-md-10">
-            <h2 class="text-primary text-center">Dados do Usuário Master</h2>
-            <br>
-          </div>
-        </div>
-
-        <form id="formCadastro" data-toggle="validator" role="form" data-delay="350" method="POST" action="../application/routes/routes.php"> 
+    <!-- NAVBAR -->
+    <?php
+        require_once 'navbar_master.php';
+    ?>
+        
+    <!-- NAV SIDE  -->
+    <?php
+        require_once 'sidebar_master.php';
+    ?>
+    <!-- NAV SIDE  -->
+    <div id="wrapper">
+      <div id="page-wrapper">
+        <div id="page-inner">
 
           <div class="row">
-            <div class="form-group col-md-3">
-              <label for="empresa">Razão Social</label>
-              <input type="text" class="form-control" placeholder="Empresa Exemplo" readonly>
+            <div class="col-md-4">
+              <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/logo.png" />
+          </a>
             </div>
+            <div class="col-md-4">
 
-            <div class="form-group col-md-3">
-              <label for="empresa">Código de Controle da Empresa</label>
-              <input type="number" class="form-control" placeholder="142123" readonly>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-group col-md-3">
-              <label for="controle">Código de Controle do Usuário</label>
-              <input type="text" class="form-control" id="controle" placeholder="Código Automático" readonly>
-            </div>
-
-            <div class="form-group col-md-3">
-              <label> Situação: </label>
               <br>
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                      <input type="radio" name="options" id="option1" checked=""> Ativo
-                    </label>
-                <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option2"> Inativo
-                    </label>
+              <br>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-10">
+              <h2 class="text-primary text-center">Editar Dados do Usuário Master</h2>
+              <br>
+            </div>
+          </div>
+          <div>
+            <p><b>Buscar Usuário:</b></p>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+               
+                  <input name="buscarUsuario" type="text" class="form-control" placeholder="Digite o login">
+              </div>
+              <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+              </div>
+          </div>
+          <hr>
+          <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
+
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="empresa">Razão Social</label>
+                <input type="text" class="form-control" placeholder="Empresa Exemplo" readonly>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="empresa">Código de Controle da Empresa</label>
+                <input type="number" class="form-control" placeholder="142123" readonly>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="controle">Código de Controle do Usuário</label>
+                <input type="text" class="form-control" id="controle" placeholder="Código Automático" readonly>
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="form-group col-md-3">
-              <label for="nome">Nome:</label>
-              <input required type="text" class="form-control" id="nome" placeholder="Nome Completo">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-group col-md-3">
-              <label for="email">Email:</label>
-              <input required type="email" class="form-control" id="email" placeholder="Email">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-group col-md-3">
-              <label for="telefone">Tel:</label>
-              <input required type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+            <div class="row">
+              
+              <div class="form-group col-md-4">
+                <label for="nome">Nome:</label>
+                <input required type="text" class="form-control" id="nome" placeholder="Nome Completo">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="email">Email:</label>
+                <input required type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="passwd">Senha:</label>
+                <input required type="password" class="form-control" id="passwd" placeholder="Minimo de 4 caracteres" minlength="4">
+              </div>
             </div>
 
-            <div class="form-group col-md-3">
-              <label for="nome">CPF</label>
-              <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
-                required type="text" class="form-control" id="nome" placeholder="Nome">
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="telefone">Telefone:</label>
+                <input required type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="nome">CPF:</label>
+                <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
+                  required type="text" class="form-control" id="nome" placeholder="Nome">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="passwd">Confirmar senha:</label>
+                <input required type="password" class="form-control" id="passwd" placeholder="Confirmar senha" minlength="4">
+              </div>
+              
             </div>
-          </div>
 
-          <div class="row">
-            <div class="form-group col-md-3">
-              <label for="passwd">Senha:</label>
-              <input required type="password" class="form-control" id="passwd" placeholder="Minimo de 4 caracteres" minlength="4">
+            <div class="row">
+              <div class="form-group col-md-4">
+                  <label> Situação: </label>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked=""> Ativo
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option2"> Inativo
+                    </label>
+                  </div>
+                </div>
             </div>
-          </div>
 
-          <br>
+            <br>
 
-          <div class="row">
-            <div class="form-group col-md-2">
-              <button type="submit" class="btn btn-primary">Atualizar</button>
+            <div class="row">
+              <div class="form-group col-md-offset-2 col-md-4">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+              </div>
+              <div class="form-group col-md-offset-2 col-md-4">
+                <button type="reset" class="btn btn-primary">Resetar</button>
+              </div>
             </div>
-            <div class="form-group col-md-2">
-              <button type="reset" class="btn btn-primary">Resetar</button>
-            </div>
-          </div>
-        </form>
-        <!-- /. ROW  -->
-        <hr />
+          </form>
+          <!-- /. ROW  -->
+          <hr />
 
 
-        <!-- /. ROW  -->
+          <!-- /. ROW  -->
+        </div>
+        <!-- /. PAGE INNER  -->
       </div>
-      <!-- /. PAGE INNER  -->
+      <!-- /. PAGE WRAPPER  -->
     </div>
-    <!-- /. PAGE WRAPPER  -->
-  </div>
-  <div class="footer">
+    <div class="footer">
 
 
-    <div class="row">
-      <div class="col-lg-12">
-        &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+      <div class="row">
+        <div class="col-lg-12">
+          &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+        </div>
       </div>
-    </div>
   </div>
 
 
