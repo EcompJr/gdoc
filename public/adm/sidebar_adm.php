@@ -4,7 +4,7 @@
         <div class="sidebar-collapse">
           <ul class="nav" id="main-menu">
   
-            <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#">Cadastro</a></li>
+            <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="glyphicon glyphicon-plus"></i> Cadastro</a></li>
             <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
               <ul style="margin-top:-50px;" class="nav">
                 <li class="active-link">
@@ -24,7 +24,7 @@
               </ul>
             </div>
   
-            <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#">Consulta</a></li>
+            <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="glyphicon glyphicon-search"></i>Consulta</a></li>
             <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
               <ul style="margin-top:-50px;" class="nav">
                 <li class="active-link">
@@ -40,7 +40,7 @@
               </ul>
             </div>
   
-            <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#">Arquivo</a></li>
+            <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="glyphicon glyphicon-file"></i> Arquivo</a></li>
             <div class="sidebar-collapse" style="max-height:223px;overflow: hidden;transition:max-height 0.2s ease-out;">
               <ul style="margin-top:-50px;" class="nav">
                 <li class="active-link">
@@ -53,14 +53,14 @@
             </div>
   
             <li id="menuId" class="active-link">
-              <a href="relatorio.php">Relatório</a>
+              <a href="relatorio.php"><i class="glyphicon glyphicon-briefcase"></i> Relatório de Utilização</a>
             </li>
   
             <li id="menuId" class="active-link">
               <a href="#">Trocar senha</a>
             </li>
             <li id="menuId" class="active-link">
-              <a href="#">Atualização de Dados de Perfil</a>
+              <a href="#"> <i class="glyphicon glyphicon-edit"></i> Atualização de Dados</a>
             </li>
   
           </ul>

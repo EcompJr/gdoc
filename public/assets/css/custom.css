@@ -217,11 +217,18 @@ min-height: 80px;
 }
 /*NAVBAR - DIFERENCIACAO DOS MENUS*/
 #menuId {
-    border: solid #3596e0;
-    border-width: 0 5px 0 5px;
-    border-radius: 5px;
-    color: white;
+    background-color: ;
+    border: solid #214761;
+    border-width: 0px 6px 2px 0px;
+    border-radius: 5px; 
+    letter-spacing: 1px;
     
+}
+
+
+#subMenuId{
+    padding-left: 1.2cm;
+    text-align: justify;
 }
 
 #subMenuId:hover {
