@@ -43,7 +43,7 @@ a:hover{
                  <!-- /. ROW  -->
             <div class="row text-center pad-top">
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-            <a href="cadastroClientes.php" >
+            <a href="cadastroEntidade.php" >
              <div class="div-square">
              <i class="fa fa-plus fa-5x"></i>
              <h4>Adicionar</h4>
@@ -54,22 +54,22 @@ a:hover{
              </div>
 
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-             <a href="cadastroClientes.php" >
+             <a href="editarEntidade.php" >
              <div class="div-square">
              <i class="fa fa-pencil fa-5x"></i>
              <h4>Editar</h4>
 
              </div>
-            </a>
+            <!--</a>
 
-             </div>
+            </div>
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
              <a href="blank.php" >
              <div class="div-square">
              <i class="fa fa-minus fa-5x"></i>
              <h4>Excluir</h4>
              </div>
-             </a>
+             </a>-->
 
              </div>
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
