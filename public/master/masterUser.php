@@ -38,13 +38,8 @@ a:hover{
                     </div>
                 </div>
                  <!-- /. ROW  -->
-                 //NAVBAR
-    require_once 'navbar_master.php';
-    //NAV SIDE 
-    require_once 'sidebar_master.php';<hr>
-
+      <hr>
                  <!-- /. ROW  -->
-
 
       <div class="row text-center pad-top">
         <div class="col-lg-offset-2 col-lg-2 col-md-2 col-sm-2 col-xs-6">
