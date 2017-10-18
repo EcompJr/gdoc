@@ -50,7 +50,9 @@
           <div class="row">
               <div class="col-md-4">
                
-                  <input name="buscarUsuario" type="text" class="form-control" placeholder="Digite o login">
+                  <select name="buscarUsuario" class="form-control" placeholder="Digite o login">
+                      <option disabled selected>Escolha um usuário</option>
+                  </select>
               </div>
               <div class="col-md-2">
                 <button id="buscarBTN" type="submit" class="btn btn-primary" name="buscarBTN">Buscar</button>
