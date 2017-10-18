@@ -4,7 +4,7 @@
                 <ul class="nav" id="main-menu">
 
                     <li class="active-link">
-                        <a href="../blank.php"><i class="fa fa-user"></i>Gestão de Administradores</a>
+                        <a href="gestaoAdministradores.php"><i class="fa fa-user"></i>Gestão de Administradores</a>
                     </li>
 
                     <li class="active-link">

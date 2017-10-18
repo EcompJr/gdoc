@@ -50,10 +50,12 @@
           <div class="row">
               <div class="col-md-4">
                
-                  <input name="buscarUsuario" type="text" class="form-control" placeholder="Digite o login">
+                  <select name="buscarUsuario" class="form-control" placeholder="Digite o login">
+                      <option disabled selected>Escolha um usuário</option>
+                  </select>
               </div>
               <div class="col-md-2">
-                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button id="buscarBTN" type="submit" class="btn btn-primary" name="buscarBTN">Buscar</button>
               </div>
           </div>
           <hr>
@@ -75,63 +77,65 @@
               </div>
             </div>
 
-            <div class="row">
-              
-              <div class="form-group col-md-4">
-                <label for="nome">Nome:</label>
-                <input required type="text" class="form-control" id="nome" placeholder="Nome Completo">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="email">Email:</label>
-                <input required type="email" class="form-control" id="email" placeholder="Email">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="passwd">Senha:</label>
-                <input required type="password" class="form-control" id="passwd" placeholder="Minimo de 4 caracteres" minlength="4">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group col-md-4">
-                <label for="telefone">Telefone:</label>
-                <input required type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
-              </div>
-
-              <div class="form-group col-md-4">
-                <label for="nome">CPF:</label>
-                <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
-                  required type="text" class="form-control" id="nome" placeholder="Nome">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="passwd">Confirmar senha:</label>
-                <input required type="password" class="form-control" id="passwd" placeholder="Confirmar senha" minlength="4">
-              </div>
-              
-            </div>
-
-            <div class="row">
-              <div class="form-group col-md-4">
-                  <label> Situação: </label>
-                  <br>
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                      <input type="radio" name="options" id="option1" checked=""> Ativo
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option2"> Inativo
-                    </label>
-                  </div>
+            <div id="teste">
+              <div class="row">
+                
+                <div class="form-group col-md-4">
+                  <label for="nome">Nome:</label>
+                  <input required type="text" class="form-control" id="nome" placeholder="Nome Completo" readonly>
                 </div>
-            </div>
-
-            <br>
-
-            <div class="row">
-              <div class="form-group col-md-offset-2 col-md-4">
-                <button type="submit" class="btn btn-primary">Salvar</button>
+                <div class="form-group col-md-4">
+                  <label for="email">Email:</label>
+                  <input required type="email" class="form-control" id="email" placeholder="Email" readonly>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="passwd">Senha:</label>
+                  <input required type="password" class="form-control" id="passwd" placeholder="Minimo de 4 caracteres" minlength="4" readonly>
+                </div>
               </div>
-              <div class="form-group col-md-offset-2 col-md-4">
-                <button type="reset" class="btn btn-primary">Resetar</button>
+          
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="telefone">Telefone:</label>
+                  <input required type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$" readonly>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label for="nome">CPF:</label>
+                  <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
+                    required type="text" class="form-control" id="nome" placeholder="Nome" readonly>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="passwd">Confirmar senha:</label>
+                  <input required type="password" class="form-control" id="passwd" placeholder="Confirmar senha" minlength="4" readonly>
+                </div>
+                
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                    <label> Situação: </label>
+                    <br>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="radio" name="options" id="option1" checked="" > Ativo
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2"> Inativo
+                      </label>
+                    </div>
+                  </div>
+              </div>
+
+              <br>
+
+              <div class="row">
+                <div class="form-group col-md-offset-2 col-md-4">
+                  <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+                <div class="form-group col-md-offset-2 col-md-4">
+                  <button id="resetBTN" type="reset" class="btn btn-primary">Resetar</button>
+                </div>
               </div>
             </div>
           </form>
@@ -158,7 +162,7 @@
 
   <script src="../assets/js/lib/jquery-1.10.2.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/cadastroUsuarioMaster.js"></script>
+  <script src="../assets/js/editarUsuarioMaster.js"></script>
   <script src="../assets/js/lib/validator.min.js"></script>
   <script src="../assets/js/custom.js"></script>
 
