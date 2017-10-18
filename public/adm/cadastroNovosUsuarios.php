@@ -13,15 +13,12 @@
 
 <body>
 
-<?php
-    require_once 'sidebar_adm.php';
-?>
-
-<!-- NAVBAR -->
-<?php
-require_once 'navbar_adm.php';
-?>
-<!-- /. NAVBAR  -->
+  <?php
+    //NAVBAR
+    require_once 'navbar_adm.php';
+    //SIDEBAR
+    require_once 'sidebar_adm.php'; 
+  ?>
 
 <div id="wrapper">  
     <div id="page-wrapper">
@@ -34,7 +31,7 @@ require_once 'navbar_adm.php';
           </div>
         </div>
 
-        <hr />
+        <hr>
         <!-- Primero bloco -->
         <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
 

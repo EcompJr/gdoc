@@ -15,15 +15,12 @@
 
 <body>
 
-<?php
-      require_once 'sidebar_adm.php';
-?>
-
-<!-- NAVBAR -->
-<?php
-require_once 'navbar_adm.php';
-?>
-<!-- /. NAVBAR  -->
+  <?php
+    //NAVBAR
+    require_once 'navbar_adm.php';
+    //SIDEBAR
+    require_once 'sidebar_adm.php'; 
+  ?>
 
 <div id="wrapper">  
     <div id="page-wrapper">
@@ -33,7 +30,7 @@ require_once 'navbar_adm.php';
               <h2 class="text-primary text-center">Relatório de Utilização</h2>
           </div>
         </div>
-
+        <hr>
         <form data-toggle="validator" role="form">
           <div class="row">
             <div class="col-md-4">

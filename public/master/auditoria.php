@@ -14,26 +14,22 @@
 
 <body>
        
-    <!-- NAVBAR -->
     <?php
+        //NAVBAR
         require_once 'navbar_master.php';
-    ?>
-        
-    <!-- NAV SIDE  -->
-    <?php
+        //NAV SIDE 
         require_once 'sidebar_master.php';
     ?>
-    <!-- NAV SIDE  -->
 
     <div id="wrapper">
         <div id="page-wrapper">
             <div id="page-inner">
-            <div class="row">
-            <div class="col-md-10">
-                <h2 class="text-primary text-center">Auditoria</h2>
-            </div>
-          </div>
-  
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2 class="text-primary text-center">Auditoria</h2>
+                    </div>
+                </div>
+        <hr>
           <form data-toggle="validator" role="form">
             <div class="row">
               <div class="col-md-4">
@@ -70,7 +66,7 @@
 
 
                 <!-- /. ROW  -->
-                <hr />
+                <hr>
 
                 <!-- /. ROW  -->
             </div>

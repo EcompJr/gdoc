@@ -15,15 +15,12 @@
 
 <body>
 
-<?php
-    require_once 'sidebar_adm.php';
-?>
-
-<!-- NAVBAR -->
-<?php
+  <?php
+    //NAVBAR
     require_once 'navbar_adm.php';
-?>
-<!-- /. NAVBAR  -->
+    //SIDEBAR
+    require_once 'sidebar_adm.php'; 
+  ?>
 
     <!-- NAV SIDE  -->
 <!--    <nav class="navbar-default navbar-side" role="navigation">
@@ -102,7 +99,7 @@
             </div>
           </div>
 
-          <hr />
+          <hr>
           <!-- Primero bloco -->
           <!-- <form> -->
           <form d="formArquivo">

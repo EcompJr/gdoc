@@ -15,15 +15,12 @@
 
 <body>
 
-<?php
-    require_once 'sidebar_adm.php';
-?>
-
-<!-- NAVBAR -->
-<?php
-require_once 'navbar_adm.php';
-?>
-<!-- /. NAVBAR  -->
+    <?php
+    //NAVBAR
+    require_once 'navbar_adm.php';
+    //SIDEBAR
+    require_once 'sidebar_adm.php'; 
+    ?>
 
 <div id="wrapper">
         
@@ -36,7 +33,7 @@ require_once 'navbar_adm.php';
                     </div>
                 </div>
 
-                <hr />
+                <hr>
 
                 <form d="formArquivo">
 

@@ -22,16 +22,12 @@ a:hover{
 
 <body>
 
-      <!-- NAVBAR -->
-      <?php
-          require_once 'navbar_master.php';
-      ?>  
-
-      <!-- NAV SIDE  -->
-      <?php
-          require_once 'sidebar_master.php';
-      ?>
-      <!-- NAV SIDE  -->
+  <?php
+    //NAVBAR
+    require_once 'navbar_master.php';
+    //NAV SIDE 
+    require_once 'sidebar_master.php';
+  ?>
          
     <div id="wrapper">
         <div id="page-wrapper" >
@@ -42,7 +38,7 @@ a:hover{
                     </div>
                 </div>
                  <!-- /. ROW  -->
-                  <hr />
+                <hr>
 
                  <!-- /. ROW  -->
 

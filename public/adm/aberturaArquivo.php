@@ -16,16 +16,12 @@
 <body>
 
 <?php
-    require_once 'sidebar_adm.php';
+  //NAVBAR
+  require_once 'navbar_adm.php';
+  //SIDEBAR
+  require_once 'sidebar_adm.php'; 
 ?>
 
-<!-- NAVBAR -->
-<?php
-    require_once 'navbar_adm.php';
-?>
-<!-- /. NAVBAR  -->
-
-    <!-- NAV SIDE  -->
 <!--    <nav class="navbar-default navbar-side" role="navigation">
       <div class="sidebar-collapse">
         <ul class="nav" id="main-menu">

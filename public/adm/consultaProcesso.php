@@ -16,15 +16,12 @@
 
 <body>
 
-<?php
-    require_once 'sidebar_adm.php';
-?>
-
-<!-- NAVBAR -->
-<?php
-require_once 'navbar_adm.php';
-?>
-<!-- /. NAVBAR  -->
+    <?php
+    //NAVBAR
+    require_once 'navbar_adm.php';
+    //SIDEBAR
+    require_once 'sidebar_adm.php'; 
+    ?>
 
 <div id="wrapper">  
         <div id="page-wrapper">
@@ -34,7 +31,7 @@ require_once 'navbar_adm.php';
                         <h2 class="text-primary text-center">Consulta de Processos</h2>
                     </div>
                 </div>
-
+                <hr>
                 <form>
                     <div class="row" style="padding-top:40px">
                         <div class="col-md-12">
