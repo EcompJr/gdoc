@@ -37,9 +37,7 @@ a:hover{
                      <h2>Usuário Master <i class="fa fa-star"></i></h2>
                     </div>
                 </div>
-                 <!-- /. ROW  -->
       <hr>
-                 <!-- /. ROW  -->
 
       <div class="row text-center pad-top">
         <div class="col-lg-offset-2 col-lg-2 col-md-2 col-sm-2 col-xs-6">

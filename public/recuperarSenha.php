@@ -10,10 +10,7 @@
     <link href="assets/css/login.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
-
 <body>
-
-
     <div id="recoverybox" style="padding-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-primary">
             <div class="panel-heading">

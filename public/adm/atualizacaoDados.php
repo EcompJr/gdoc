@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EGDOC - Cadastro de Usuário</title>
+  <title>EGDOC - Atualização de Dados</title>
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
   <link href="../assets/css/custom.css" rel="stylesheet" />
@@ -25,19 +25,29 @@
       <div id="page-inner">
         <div class="row">
           <div class="col-md-10">
-            <h2 class="text-primary text-center">Cadastro de Usuário</h2>
-
+            <h2 class="text-primary text-center">Atualização de Dados</h2>
             <!--<h2 class="text-primary text-left">Razão Social</h2>-->
           </div>
         </div>
 
         <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                <label for="tel">Usuários Cadastrados</label>
+                <select id="civil" class="form-control">
+                <option value="solteiro">Usuário 1</option>
+                <option value="solteiro">Usuário 2</option>
+                </select>
+                </div>
+            </div>
+        <hr>
+
         <!-- Primero bloco -->
         <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
           <div class="row">
             <div class="form-group col-md-4">
               <label for="tipoUsuario">Tipo de Usuário</label>
-              <select id="tipoUsuario" class="form-control">
+              <select id="tipoUsuario" class="form-control" disabled>
                 <option value"Administrador" checked>Administrador</option>
                 <!--<option value="Intermédiario">Intermediario</option>-->
                 <option value="Interno">Interno</option>
@@ -46,11 +56,11 @@
             </div>
             <div class="form-group col-md-4">
               <label for="ie">Nome</label>
-              <input type="text" required class="form-control" id="nome" size=30>
+              <input readonly="true" type="text" required class="form-control" id="nome" size=30>
             </div>
             <div class="form-group col-md-4">
               <label for="tel">Sexo</label>
-              <select id="sexo" class="form-control">
+              <select id="sexo" class="form-control" disabled>
                   <option value="masculino">Masculino</option>
                   <option value="feminino">Feminino</option>
               </select>
@@ -60,26 +70,26 @@
           <div class="row">
             <div class="form-group col-md-4">
               <label for="tel">CPF/CNPJ</label>
-              <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
+              <input readonly="true" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
                 class="form-control" type="text">
             </div>
 
             <div class="form-group col-md-4">
               <label for="pais">País</label>
-              <select required id="pais" class="form-control">
+              <select required id="pais" class="form-control" disabled>
                 <option value=""></option>
               </select>
             </div>
             <div class="form-group col-md-4">
               <label for="tel">Profissão</label>
-              <input class="form-control" type="text">
+              <input readonly="true" class="form-control" type="text">
             </div>
           </div>
 
           <div class="row">
             <div class="form-group col-md-4">
               <label for="tel">Estado Civil</label>
-              <select id="civil" class="form-control">
+              <select id="civil" class="form-control" disabled>
               <option value="solteiro">Solteiro</option>
               <option value="casado">Casado</option>
               <option value="divorciado">Divorciado</option>
@@ -89,26 +99,26 @@
             </div>
             <div class="form-group col-md-4">
               <label for="tel">Telefone</label>
-              <input class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+              <input readonly="true" class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
             </div>
             <div class="form-group col-md-4">
               <label for="tel">Celular</label>
-              <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+              <input readonly="true" required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
             </div>
           </div>
 
           <div class="row">
             <div class="form-group col-md-4 ">
                 <label for="cep">CEP</label>
-                <input placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
+                <input readonly="true" placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
             </div>
             <div class="form-group col-md-4">
               <label for="tel">WhatsApp</label>
-              <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+              <input readonly="true" required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
             </div>
             <div class="form-group col-md-4">
               <label for="estados">UF</label>
-              <select required id="estados" class="form-control">
+              <select required id="estados" class="form-control" disabled>
               <option value=""></option>
             </select>
             </div>
@@ -117,58 +127,58 @@
           <div class="row">
             <div class="form-group col-md-4">
               <label for="cidade">Cidade</label>
-              <select required id="cidades" class="form-control"></select>
+              <select required id="cidades" class="form-control" disabled></select>
             </div>
             <div class="form-group col-md-4">
               <label for="complemento">Complemento</label>
-              <input type="text" class="form-control" id="complemento">
+              <input readonly="true" type="text" class="form-control" id="complemento">
             </div>
             <div class="form-group col-md-4">
               <label for="bairro">Bairro</label>
-              <input required type="text" class="form-control" id="bairro">
+              <input readonly="true" required type="text" class="form-control" id="bairro">
             </div>
           </div>
 
           <div class="row">
             <div class="form-group col-md-4">
               <label for="cidade">Logradouro</label>
-              <input required type="text" class="form-control" id="logradouro">
+              <input readonly="true" required type="text" class="form-control" id="logradouro">
               </div>
             <div class="form-group col-md-4">
               <label for="complemento">Número</label>
-              <input type="text" class="form-control" id="numero">
+              <input readonly="true" type="text" class="form-control" id="numero">
             </div>
             <div class="form-group col-md-4">
               <label for="bairro">Email</label>
-              <input required type="text" class="form-control" id="email">
+              <input readonly="true" required type="text" class="form-control" id="email">
             </div>
           </div>
 
           <div class="row">
             <div class="form-group col-md-6">
               <label for="bairro">Email para autorizar cadastro externo </label>
-              <input id="emailExterno" class="form-control" type="email" class="form-control" id="emailExterno">
+              <input readonly="true" id="emailExterno" class="form-control" type="email" class="form-control" id="emailExterno">
             </div>
             <div class="form-group col-md-6">
               <label for="bairro">Email para autorizar cadastro interno</label>
-              <input id="emailInterno" class="form-control" type="email" class="form-control" id="emailInterno">
+              <input readonly="true" id="emailInterno" class="form-control" type="email" class="form-control" id="emailInterno">
             </div>
           </div>
 
           <div class="row">
             <div class="form-group col-md-6">
               <label for="bairro">Senha</label>
-              <input required type="password" class="form-control" id="senha">
+              <input readonly="true" required type="password" class="form-control" id="senha">
             </div>
             <div class="form-group col-md-6">
               <label for="bairro">Confirmar Senha</label>
-              <input required type="password" class="form-control" id="senhaConfirmar">
+              <input readonly="true" required type="password" class="form-control" id="senhaConfirmar">
             </div>
           </div>
 
           <form class="form-inline">
             <div style="float: right" class="form-group">
-              <button class="btn btn-primary" type="text" name="cancelar">Salvar</button>
+              <button class="btn btn-primary" type="text" name="cancelar" disabled>Salvar</button>
             </div>
             <div style="float: left" class="form-group">
               <button class="btn" type="submit" name="salvar" disabled>Resetar</button>
