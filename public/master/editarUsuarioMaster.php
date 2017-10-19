@@ -60,7 +60,20 @@
           </div>
           <hr>
           <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
-
+              <div class="row">
+                <div class="form-group col-md-4">
+                    <label> Situação: </label>
+                    <br>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="radio" name="options" id="option1" checked="" > Ativo
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2"> Inativo
+                      </label>
+                    </div>
+                  </div>
+              </div>
             <div class="row">
               <div class="form-group col-md-4">
                 <label for="empresa">Razão Social</label>
@@ -112,29 +125,17 @@
                 
               </div>
 
-              <div class="row">
-                <div class="form-group col-md-4">
-                    <label> Situação: </label>
-                    <br>
-                    <div class="btn-group" data-toggle="buttons">
-                      <label class="btn btn-primary active">
-                        <input type="radio" name="options" id="option1" checked="" > Ativo
-                      </label>
-                      <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option2"> Inativo
-                      </label>
-                    </div>
-                  </div>
-              </div>
-
               <br>
 
               <div class="row">
-                <div class="form-group col-md-offset-2 col-md-4">
-                  <button type="submit" class="btn btn-primary">Salvar</button>
+                <div class="form-group col-md-offset-2 col-md-3">
+                  <button class="btn btn-danger" type="submit" name="excluir">Excluir</button>
                 </div>
-                <div class="form-group col-md-offset-2 col-md-4">
-                  <button id="resetBTN" type="reset" class="btn btn-primary">Resetar</button>
+                <div class="form-group col-md-3">
+                  <button class="btn btn-warning" type="reset" name="resetar">Resetar</button>
+                </div>
+                <div class="form-group col-md-3">
+                  <button class="btn btn-primary" type="submit" name="salvar">Salvar</button>
                 </div>
               </div>
             </div>
