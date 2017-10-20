@@ -26,7 +26,7 @@ body {
 
  #wrapper {
     width: 100%;
-    margin-top:50px;
+    margin-top:30px;
 }
 
 #page-wrapper {
@@ -221,14 +221,14 @@ min-height: 80px;
     border: solid #214761;
     border-width: 0px 6px 2px 0px;
     border-radius: 5px; 
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px;    
 }
 
 
 #subMenuId{
     padding-left: 1.2cm;
     text-align: justify;
+    padding-top: 10px;    
 }
 
 #subMenuId:hover {
