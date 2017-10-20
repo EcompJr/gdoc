@@ -39,7 +39,7 @@
           </div>
           <div class="row">
             <div class="col-md-10">
-              <h2 class="text-primary text-center">Dados do Usuário Master</h2>
+              <h2 class="text-primary text-center">Cadastro de Usuário Master</h2>
               <br>
             </div>
           </div>
