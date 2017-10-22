@@ -9,7 +9,7 @@
             </li>
   
             <li id="menuId" class="active-link">
-              <a href="buscaArquivo.php"> <i class="glyphicon glyphicon-edit"></i> Atualização de Dados</a>
+              <a href="editarUsuarioInterno.php"> <i class="glyphicon glyphicon-edit"></i> Atualização de Dados</a>
             </li>
   
           </ul>
