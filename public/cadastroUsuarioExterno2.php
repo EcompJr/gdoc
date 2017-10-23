@@ -58,35 +58,35 @@
                 <div class="form-group">
                     <label for="bairro" class="col-md-3 control-label">Bairro</label>
                     <div class="col-md-9">
-                        <input type="text" class="form-control" name="bairro" placeholder="Digite o nome do seu bairro" required>
+                        <input type="text" class="form-control" name="bairro"  required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="logradouro" class="col-md-3 control-label">Logradouro</label>
                     <div class="col-md-9">
-                        <input type="text" class="form-control" name="logradouro" placeholder="Digite seu endereço" required>
+                        <input type="text" class="form-control" name="logradouro"  required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="email" class="col-md-3 control-label">Número</label>
                     <div class="col-md-9">
-                        <input type="number" class="form-control" name="numero" placeholder="Digite o número do logradouro" required>
+                        <input type="number" class="form-control" name="numero"  required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="complemento" class="col-md-3 control-label">Complemento</label>
                     <div class="col-md-9">
-                        <input type="text" class="form-control" name="complemento" placeholder="Digite o Complemento (Opcional)">
+                        <input type="text" class="form-control" name="complemento" >
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="cep" class="col-md-3 control-label">CEP</label>
                     <div class="col-md-9">
-                        <input type="text" class="form-control" name="cep" placeholder="Digite o email cadastrado" required>
+                        <input type="text" class="form-control" name="cep"  required>
                     </div>
                 </div>
 
@@ -101,14 +101,14 @@
                     <div class="form-group">
                         <label for="confirmarSenha" class="col-md-3 control-label">Confirmar Senha</label>
                         <div class="col-md-9">
-                            <input type="password" class="form-control" name="confirmarSenha" placeholder="Repita a senha" required minlength="4" data-match="#senha">
+                            <input type="password" class="form-control" name="confirmarSenha"  required minlength="4" data-match="#senha">
                         </div>
                     </div>
 
                     <div class="form-group">
 
                     <div class="col-md-offset-3 col-md-9">
-                        <button id="btn-signup" name="cadUserExterno" type="submit" class="btn btn-primary pull-right">Próximo</button>
+                        <button id="btn-signup" name="cadUserExterno" type="submit" class="btn btn-primary pull-right">Finalizar</button>
                     </div>
                 </div>
                 

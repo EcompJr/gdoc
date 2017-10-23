@@ -236,7 +236,7 @@
             </div>
 
           <div class="form-group">
-            <button style="float: right" class="btn btn-danger"  name="excluir" data-toggle="modal" data-target="#myModal">Excluir</button>
+            <button style="float: left" class="btn btn-danger"  name="excluir" data-toggle="modal" data-target="#myModal">Excluir</button>
             <button style="float: right" class="btn btn-primary" type="submit" name="salvar">Salvar</button>
           </div>
 
