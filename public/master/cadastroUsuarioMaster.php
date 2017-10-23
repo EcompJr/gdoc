@@ -138,7 +138,8 @@
 
       <div class="row">
         <div class="col-lg-12">
-          &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/" style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
+          &copy; 2017 egdoc.com | Design by: <a href="http://ecompjr.com.br/"
+          style="color:#fff;" target="_blank"> <strong>www.ecompjr.com.br</strong></a>
         </div>
       </div>
   </div>
