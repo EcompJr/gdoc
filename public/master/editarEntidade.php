@@ -207,7 +207,7 @@
           </div>
           <div class="form-group col-md-4">
             <label for="obs">Observações</label>
-            <textarea placeholder="Escreva aqui sua observação" id="obs" rows="5" cols="40" disabled></textarea>
+            <textarea placeholder="Escreva aqui sua observação" id="obs" rows="5" style="min-width: 100%" disabled></textarea>
           </div>
           </div>
 
