@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EGDOC - Cadastro de Clientes</title>
+  <title>EGDOC - Cadastro de Admninistradores</title>
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/font-awesome.css" rel="stylesheet" />
   <link href="../assets/css/custom.css" rel="stylesheet" />
@@ -35,39 +35,19 @@
         <!-- Primero bloco -->
         <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
 
+           <!-- Primeira row -->
           <div class="row">
-            <div class="form-group col-md-offset-1 col-md-4">
+            <div class="form-group col-md-5">
               <label for="ie">Nome</label>
               <input type="text" required class="form-control" id="nome" size=30>
             </div>
 
-            <div class="form-group col-md-2">
+            <div class="form-group col-md-4">
               <label for="tel">Sexo</label>
               <select id="sexo" class="form-control">
                   <option value="masculino">Masculino</option>
                   <option value="feminino">Feminino</option>
               </select>
-            </div>
-            <div class="form-group col-md-4">
-              <label for="tel">CPF/CNPJ</label>
-              <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
-                class="form-control" type="text">
-            </div>
-          </div>
-
-
-          <div class="row">
-            
-
-            <div class="form-group col-md-offset-1 col-md-3">
-              <label for="pais">País</label>
-              <select required id="pais" class="form-control">
-                <option value=""></option>
-              </select>
-            </div>
-            <div class="form-group col-md-4">
-              <label for="tel">Profissão</label>
-              <input class="form-control" type="text">
             </div>
             <div class="form-group col-md-3">
               <label for="tel">Estado Civil</label>
@@ -81,79 +61,17 @@
             </div>
           </div>
 
+           <!-- Segunda row --> 
           <div class="row">
-            <div class="form-group col-md-offset-1 col-md-4">
-              <label for="tel">Telefone:</label>
-              <input class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
-            </div>
-
-            <div class="form-group col-md-3">
-              <label for="tel">Celular:</label>
-              <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
-            </div>
-
-
-            <div class="form-group col-md-3">
-              <label for="tel">WhatsApp:</label>
-              <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-group col-md-offset-1 col-md-4">
-              <label for="cep">C.E.P</label>
-              <input placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
-            </div>
-
-            <div class="form-group col-md-3">
-              <label for="estados">UF</label>
-              <select required id="estados" class="form-control">
-                <option value=""></option>
-              </select>
-            </div>
-
-            <div class="form-group col-md-3">
-              <label for="cidade">Cidade</label>
-              <select required id="cidades" class="form-control">
-              </select>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="form-groups col-md-offset-1 col-md-3">
-              <label for="complemento">Complemento</label>
-              <input placeholder="Edíficio número 2" type="text" class="form-control" id="complemento">
-            </div>
-
-            <div class="form-group col-md-3">
-              <label for="bairro">Bairro</label>
-              <input placeholder="Bairro" required type="text" class="form-control" id="bairro">
-            </div>
-
-            <div class="form-group col-md-2">
-              <label for="endereco">Logradouro</label>
-              <input type="text" required class="form-control" id="endereco">
-            </div>
-
-            <div class="form-group col-md-2">
-              <label for="endereco">Numero</label>
-              <input type="number" required class="form-control" id="numero">
-            </div>
-
-          </div>
-
-
-          <div class="row">
-            <div class="form-group col-md-offset-1 col-md-4">
+            <div class="form-group col-md-4">
               <label for="tel">Email</label>
               <input class="form-control" type="email">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-4">
               <label for="bairro">Senha</label>
               <input placeholder="Senha" required type="password" class="form-control" id="senha">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-4">
               <label for="bairro">Confirmar Senha</label>
               <input placeholder="Confirmar Senha" required type="password" class="form-control" id="senhaConfirmar">
             </div>
@@ -169,10 +87,96 @@
             </div>
             -->
           </div>
+
+          <hr>
+          <!-- Terceira row -->
+          <div class="row">
+            <div class="form-group col-md-4">
+              <label for="tel">CPF/CNPJ</label>
+              <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
+                class="form-control" type="text">
+            </div>
+          
+            <div class="form-group col-md-4">
+              <label for="tel">Profissão</label>
+              <input class="form-control" type="text">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="tel">Empresa</label>
+              <input class="form-control" type="text" placeholder="Nome da Empresa" readonly>
+            </div>
+          </div>
+
           
           <div class="row">
-            
+            <div class="form-group col-md-4">
+              <label for="tel">Telefone:</label>
+              <input class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="tel">Celular:</label>
+              <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+            </div>
+
+
+            <div class="form-group col-md-4">
+              <label for="tel">WhatsApp:</label>
+              <input required class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="^(\(11\) [9][0-9]{4}-[0-9]{4})|(\(1[2-9]\) [5-9][0-9]{3}-[0-9]{4})|(\([2-9][1-9]\) [5-9][0-9]{3}-[0-9]{4})$">
+            </div>
           </div>
+
+          <hr>
+          <div class="row">
+            <div class="form-group col-md-3">
+                <label for="cep">C.E.P:</label>
+                <input placeholder="C.E.P" placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
+            </div>  
+            <div class="form-group col-md-3">
+                <label for="cidade">Cidade:</label>
+                <select placeholder="Cidade" required id="cidades" class="form-control">
+                    <option value=""</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="estados">UF:</label>
+                <select required id="estados" class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="pais">País:</label>
+                <select required id="pais" class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="form-group col-md-3">
+              <label for="complemento">Complemento:</label>
+              <input placeholder="Ex: Edíficio número 2" type="text" class="form-control" id="complemento">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="bairro">Bairro:</label>
+              <input placeholder="Bairro" required type="text" class="form-control" id="bairro">
+            </div>
+
+            <div class="form-group col-md-3">
+            <label for="endereco">Logradouro:</label>
+            <input placeholder="Logradouro" type="text" required class="form-control" id="endereco">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="endereco">Número:</label>
+              <input placeholder="Número" type="number" required class="form-control" id="numero">
+            </div>          
+          </div>
+          
 
           <br>
 
