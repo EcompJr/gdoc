@@ -6,7 +6,7 @@
   
             <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="glyphicon glyphicon-plus"></i> Cadastro</a></li>
             <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
-              <ul style="margin-top:-50px;" class="nav">
+              <ul style="margin-top: -19.6px;" class="nav">
                 <li class="active-link">
                   <a id="subMenuId" href="cadastroNovosUsuarios.php" aria-hidden="true">Cadastro de Usuários</a>
                 </li>
@@ -26,7 +26,7 @@
   
             <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="glyphicon glyphicon-search"></i>Consulta</a></li>
             <div class="sidebar-collapse" style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;">
-              <ul style="margin-top:-50px;" class="nav">
+              <ul style="margin-top: -19.6px;" class="nav">
                 <li class="active-link">
                   <a id="subMenuId" href="consultaProcesso.php">Consulta de Processos</a>
                 </li>
@@ -42,7 +42,7 @@
   
             <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="glyphicon glyphicon-file"></i> Arquivo</a></li>
             <div class="sidebar-collapse" style="max-height:223px;overflow: hidden;transition:max-height 0.2s ease-out;">
-              <ul style="margin-top:-50px;" class="nav">
+              <ul style="margin-top: -19.6px;" class="nav">
                 <li class="active-link">
                   <a id="subMenuId" href="cadastroArquivo.php">Cadastro de Arquivo</a>
                 </li>
