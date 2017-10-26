@@ -90,7 +90,7 @@
               </div>
             </div>
 
-            <div id="teste">
+            
               <div class="row">
                 
                 <div class="form-group col-md-4">
@@ -127,21 +127,14 @@
 
               <br>
 
-              <div class="row">
-                <div class="form-group col-md-offset-2 col-md-3">
-                  <button class="btn btn-danger" type="submit" name="excluir">Excluir</button>
-                </div>
-                <div class="form-group col-md-3">
-                  <button class="btn btn-warning" type="reset" name="resetar">Resetar</button>
-                </div>
-                <div class="form-group col-md-3">
-                  <button class="btn btn-primary" type="submit" name="salvar">Salvar</button>
-                </div>
+              <div class="form-group">        
+                <button style="float: left" class="btn btn-danger" type="submit" name="excluir">Excluir</button>
+                <button style="float: right" class="btn btn-primary" type="submit" name="salvar">Salvar</button>
               </div>
-            </div>
+           
           </form>
           <!-- /. ROW  -->
-          <hr />
+          
 
 
           <!-- /. ROW  -->

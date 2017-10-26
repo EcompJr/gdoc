@@ -174,14 +174,9 @@
 
                 <br>
 
-                <div class="row">
-                    <div class="form-group col-md-offset-3 col-md-4">
-                        <button class="btn btn-lg btn-danger" type="reset" name="resetar">Cancelar</button>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <button class="btn btn-lg btn-primary" type="submit" name="salvar">Salvar</button>
-                    </div>
+                <div class="form-group">
+                    <button style="float: left" class="btn btn-danger" type="reset" name="resetar">Cancelar</button>
+                    <button style="float: right" class="btn btn-primary" type="submit" name="salvar">Salvar</button>
                 </div>
 
 

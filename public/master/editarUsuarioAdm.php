@@ -190,23 +190,13 @@
               <input placeholder="Número" type="number" required class="form-control" id="numero">
             </div>          
           </div>
-  
 
           <br>
 
-          <div class="row">
-            <div class="form-group col-md-offset-1 col-md-3">
-              <button class="btn btn-lg btn-danger" type="submit" name="excluir">Excluir</button>
-            </div>
-            <div class="form-group col-md-offset-1 col-md-3">
-              <button class="btn btn-lg btn-warning" type="reset" name="resetar">Resetar</button>
-            </div>
-
-            <div class="form-group col-md-offset-1 col-md-3">
-              <button class="btn btn-lg btn-primary" type="submit" name="salvar">Salvar</button>
-            </div>
+          <div class="form-group">            
+            <button style="float: left" class="btn btn-danger" type="submit" name="excluir">Excluir</button>
+            <button style="float: right" class="btn btn-primary" type="submit" name="salvar">Salvar</button>
           </div>
-
 
         </form>
 
