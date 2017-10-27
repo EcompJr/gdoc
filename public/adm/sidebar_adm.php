@@ -4,7 +4,9 @@
         <div class="sidebar-collapse">
           <ul class="nav" id="main-menu">
   
+      
             <li id="menuId" class="active-link scrollMenu"><a aria-hidden="true" href="#"><i class="glyphicon glyphicon-plus"></i> Cadastro</a></li>
+  
             <div style="max-height:0;overflow: hidden;transition:max-height 0.2s ease-out;" class="sidebar-collapse">
               <ul style="margin-top:-50px;" class="nav">
                 <li class="active-link">
