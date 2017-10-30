@@ -42,7 +42,8 @@ a:hover{
 
                  <!-- /. ROW  -->
             <div class="row text-center pad-top">
-             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+             <!--<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">-->
+             <div class="col-lg-offset-1 col-lg-2 col-md-2 col-sm-2 col-xs-6">
             <a href="cadastroEntidade.php" >
              <div class="div-square">
              <i class="fa fa-plus fa-5x"></i>
@@ -60,16 +61,17 @@ a:hover{
              <h4>Editar</h4>
 
              </div>
-            <!--</a>
+            </a>
+
 
             </div>
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-             <a href="blank.php" >
+             <a href="blank.php" data-toggle="modal" data-target="#myModal">
              <div class="div-square">
-             <i class="fa fa-minus fa-5x"></i>
-             <h4>Excluir</h4>
+             <i class="fa fa-search fa-5x"></i>
+             <h4>Pesquisar</h4>
              </div>
-             </a>-->
+             </a>
 
              </div>
              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
@@ -94,11 +96,6 @@ a:hover{
    </div>
 
 <br>
-
-                  <!-- Trigger the modal with a button -->
-                  <div class="col-md-6 col-lg-6">
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Buscar</button>
-                  </div>
                   
 
                   <!-- Modal -->
