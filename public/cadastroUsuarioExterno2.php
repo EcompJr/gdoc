@@ -29,7 +29,7 @@
 
                     
                     <div class="form-group">
-                    <label for="email" class="col-md-3 control-label">Pais</label>
+                    <label for="email" class="col-md-3 control-label">País</label>
                     <div class="col-md-9">
                         <select required id="pais" name="pais" class="form-control">
                             <option value=""></option>
