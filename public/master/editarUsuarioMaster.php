@@ -77,7 +77,7 @@
             <div class="row">
               <div class="form-group col-md-4">
                 <label for="empresa">Razão Social</label>
-                <input type="text" class="form-control" placeholder="Empresa Exemplo" readonly>
+                <input type="text" class="form-control" placeholder="Nome Empresa" readonly>
               </div>
 
               <div class="form-group col-md-4">
@@ -94,12 +94,12 @@
               <div class="row">
                 
                 <div class="form-group col-md-4">
-                  <label for="nome">Nome:</label>
-                  <input required type="text" class="form-control" id="nome" placeholder="Nome Completo" readonly>
+                  <label for="nome">Nome Completo:</label>
+                  <input required type="text" class="form-control" id="nome" placeholder="" readonly>
                 </div>
                 <div class="form-group col-md-4">
                   <label for="email">Email:</label>
-                  <input required type="email" class="form-control" id="email" placeholder="Email" readonly>
+                  <input required type="email" class="form-control" id="email" placeholder="" readonly>
                 </div>
                 <div class="form-group col-md-4">
                   <label for="passwd">Senha:</label>
@@ -116,7 +116,7 @@
                 <div class="form-group col-md-4">
                   <label for="nome">CPF:</label>
                   <input pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
-                    required type="text" class="form-control" id="nome" placeholder="Nome" readonly>
+                    required type="text" class="form-control" id="nome" placeholder="" readonly>
                 </div>
                 <div class="form-group col-md-4">
                   <label for="passwd">Confirmar senha:</label>
