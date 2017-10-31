@@ -44,7 +44,7 @@ a:hover{
 
 
               <div class="row text-center pad-top">
-              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+              <div class="col-lg-offset-3 col-lg-2 col-md-2 col-sm-2 col-xs-6">
               <a href="pesquisar.html" >
               <div class="div-square">
 

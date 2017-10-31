@@ -47,6 +47,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
+                <br>
                     <label for="usuario">Usuário</label>
                     <select required class="form-control" name="usuario" id="usuario">
                                 <option value="">Selecione um usuário</option>

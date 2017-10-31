@@ -130,12 +130,12 @@
           <hr>
           <div class="row">
             <div class="form-group col-md-3">
-                <label for="cep">C.E.P:</label>
-                <input placeholder="C.E.P" placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
+                <label for="cep">CEP:</label>
+                <input placeholder="" placeholder="XXXXX-XXX" required pattern="^\\d{5}[-]\\d{3}$" type="text" class="form-control" id="cep" size="10">
             </div>  
             <div class="form-group col-md-3">
                 <label for="cidade">Cidade:</label>
-                <select placeholder="Cidade" required id="cidades" class="form-control">
+                <select placeholder="" required id="cidades" class="form-control">
                     <option value=""</option>
                 </select>
             </div>
@@ -163,17 +163,17 @@
 
             <div class="form-group col-md-3">
               <label for="bairro">Bairro:</label>
-              <input placeholder="Bairro" required type="text" class="form-control" id="bairro">
+              <input placeholder="" required type="text" class="form-control" id="bairro">
             </div>
 
             <div class="form-group col-md-3">
             <label for="endereco">Logradouro:</label>
-            <input placeholder="Logradouro" type="text" required class="form-control" id="endereco">
+            <input placeholder="" type="text" required class="form-control" id="endereco">
             </div>
 
             <div class="form-group col-md-3">
-              <label for="endereco">Número:</label>
-              <input placeholder="Número" type="number" required class="form-control" id="numero">
+              <label for="numero">Número:</label>
+              <input placeholder="" type="number" required class="form-control" id="numero">
             </div>          
           </div>
           
