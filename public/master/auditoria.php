@@ -57,7 +57,7 @@
             </div>
             <div style="float: right;margin-top: 3%;" class="row" style="padding-top:40px">
               <div class="col-md-6">
-                <button class="btn btn-default" type="submit" id="relatório">Auditar</button>
+                <button class="btn btn-primary" type="submit" id="relatório">Auditar</button>
               </div>
             </div>
           </form>
