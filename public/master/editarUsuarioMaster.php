@@ -24,25 +24,17 @@
       <div id="page-wrapper">
         <div id="page-inner">
 
-          <div class="row">
-            <div class="col-md-4">
-              <a class="navbar-brand" href="../index.html">
+        <div class="row">
+        <div class="col-md-2">
+          <a href="../index.html">
             <img src="../assets/img/logo.png" />
           </a>
-            </div>
-            <div class="col-md-4">
-
-              <br>
-              <br>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="col-md-10">
-              <h2 class="text-primary text-center">Editar Dados do Usuário Master</h2>
-              <br>
-            </div>
-          </div>
+        </div>
+        <div class="col-md-offset-1 col-md-7">
+          <h2 class="text-primary text-center">Editar Dados de Usuário Master</h2>
+            <br>
+        </div>
+      </div>
           <hr>
           <div>
             <p><b>Buscar Usuário:</b></p>
