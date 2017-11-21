@@ -25,27 +25,34 @@
         <div id="page-inner">
 
           <div class="row">
-            <div class="col-md-4">
-              <a class="navbar-brand" href="../index.html">
-            <img src="../assets/img/logo.png" />
-          </a>
+            <div class="col-md-2">
+              <a href="../index.html">
+                <img src="../assets/img/logo.png" />
+              </a>
             </div>
-            <div class="col-md-4">
-
-              <br>
-              <br>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-offset-1 col-md-7">
               <h2 class="text-primary text-center">Cadastro de Usuário Master</h2>
-              <br>
+                <br>
             </div>
           </div>
           <hr>
 
           <form id="formCadastro" data-toggle="validator" role="form" data-delay="350">
+
+            <div class="row">
+              <div class="form-group col-md-4">
+                  <label> Situação: </label>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked=""> Ativo
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option2"> Inativo
+                    </label>
+                  </div>
+                </div>
+            </div>
 
             <div class="row">
               <div class="form-group col-md-4">
@@ -97,34 +104,17 @@
               
             </div>
 
-            <div class="row">
-              <div class="form-group col-md-4">
-                  <label> Situação: </label>
-                  <br>
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                      <input type="radio" name="options" id="option1" checked=""> Ativo
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option2"> Inativo
-                    </label>
-                  </div>
-                </div>
-            </div>
-
             <br>
 
-            <div class="row">
-              <div class="form-group col-md-offset-2 col-md-4">
-                <button type="submit" class="btn btn-primary">Salvar</button>
-              </div>
-              <div class="form-group col-md-offset-2 col-md-4">
-                <button type="reset" class="btn btn-primary">Resetar</button>
-              </div>
+            <div class="form-group">
+              
+              <button style="float:left" type="reset" class="btn btn-warning">Resetar</button>
+              <button style="float:right" type="submit" class="btn btn-primary">Salvar</button>
             </div>
+            
           </form>
           <!-- /. ROW  -->
-          <hr />
+        
 
 
           <!-- /. ROW  -->
