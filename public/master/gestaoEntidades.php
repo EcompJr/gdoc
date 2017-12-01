@@ -113,69 +113,66 @@ a:hover{
                     
 
         <!-- Grid da pagina  -->
-               <div class ="row">
-               <div class="col-md-6 col-lg-6 col-md-offset-2 col-xs-12 table-responsive">
-
-                 <table class="table table-striped table-bordered table-hover">
-                       <thead>
-                         <tr>
-                           <th>Nº</th>
-                           <th> Código </th>
-                           <th> Razão Social</th>
-                         </tr>
-                       </thead>
-
-                       <tbody>
-                         <tr>
-                         <td>0</td>
-                         <td> Lorem Ipsum</td>
-                         <td> Lorem Ipsum</td>
-                       </tr>
-                       <tr>
-                         <td>1</td>
-                         <td>Lorem Ipsum</td>
-                         <td>Ipsum Lorem</td>
-                       </tr>
-                       </tbody>
-
-                 </table>
-
-               </div>
-
-
-                 <div class="col-md-4 col-lg-4 col-xs-12">
+              <div class ="row">
+              <div class="col-md-4 col-lg-4 col-xs-12">
                    <div class="col-md-6 col-lg-6">
                     <form>
                       <div class="form-group">
-
                         <input style="width:150px;" class="form-control" type="busca" placeholder="Entidade" id="buscaEntidade">
                       </div>
                     </form>
                    </div>
-
-<!--                 <div class="col-md-6 col-lg-6">
-                   <button type="button" class="btn btn-primary"> Buscar</button>
-                 </div>-->
-
                  </div>
+      
+              </div>
+              
+              <div class ="row">
+                
+                <div class="col-md-10 col-lg-10  col-md-offset-1 col-xs-12">
 
+                  <table class="table table-hover table-responsive">
+                        <thead>
+                          <tr>
+                            <th>Nº</th>
+                            <th> Código </th>
+                            <th> Razão Social</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                          <td>0</td>
+                          <td> Lorem Ipsum</td>
+                          <td> Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Lorem Ipsum</td>
+                          <td>Ipsum Lorem</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+
+               </div>
+
+
+        
              </div>
 
            <!-- Opção de proximo e anterior-->
-             <div class="row">
-                <div class=" col-md-6 col-xs-12 col-lg-6 col-md-offset-2 col-lg-offset-2">
-                   <div class="col-md-4 col-lg-4">
+             <div class="container-fluid">
+                 <div class="row">
+                   <div class="col-md-offset-3 col-xs-2 col-lg-2">
                      <button type="anterior" class="btn btn-secondary" href=""> Anterior </button>
                    </div>
-                   <div class="col-md-4 col-lg-4">
-                     <p> 1-1</p>
+                   <div class="col-xs-2 col-lg-2">
+                     <p style="text-align:center;"> 1-1</p>
                    </div>
-                   <div class="col-md-4 col-lg-4">
+                   <div class="col-xs-2 col-lg-2 ">
                      <button type="anterior" class="btn btn-secondary" href=""> Próximo </button>
                    </div>
-
-                </div>
-
+                  </div>
              </div>
 
           <!--Qualquer coisa abaixo dos botões de proximoe anterior deve ficar aqui -->
